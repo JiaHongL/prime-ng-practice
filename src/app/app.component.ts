@@ -17,6 +17,13 @@ export class AppComponent {
           routerLink:'/icon'
         },
         {
+          label: 'Form',
+          items: [{
+            label: 'AutoComplete',
+            routerLink:'/form/auto-complete'
+          }]
+        },
+        {
             label: 'File',
             items: [{
                     label: 'New', 

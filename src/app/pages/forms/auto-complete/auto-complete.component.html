@@ -1,0 +1,104 @@
+<h5>Basic </h5>
+<p-autoComplete
+    [(ngModel)]="selectedCountry"
+    [autoHighlight]="true"
+    [dataKey]="'code'"
+    [showEmptyMessage]="true"
+    [emptyMessage]="'找不到資料(客製)'"
+    [suggestions]="filteredCountries"
+    (completeMethod)="filterCountry($event)"
+    field="name"
+    [minLength]="1"
+    [required]="true"
+></p-autoComplete>
+
+<br><br>
+
+<p-autoComplete
+    [formControl]="selectedCountryFormControl"
+    [autoHighlight]="true"
+    [dataKey]="'code'"
+    [showEmptyMessage]="true"
+    [emptyMessage]="'找不到資料(客製)'"
+    [suggestions]="filteredCountries"
+    (completeMethod)="filterCountry($event)"
+    field="name"
+    [minLength]="1"
+></p-autoComplete>
+
+<h5>Dropdown and Templating</h5>
+<p-autoComplete
+    [(ngModel)]="selectedCountryAdvanced"
+    [suggestions]="filteredCountries"
+    (completeMethod)="filterCountry($event)"
+    field="name"
+    [dropdown]="true"
+>
+    <ng-template
+        let-country
+        pTemplate="item"
+    >
+        <div class="country-item">
+            <div>{{country.name}}</div>
+        </div>
+    </ng-template>
+</p-autoComplete>
+
+<p>
+    ps: 可設置 dropdownMode="current"，下拉時會發送當前的值
+</p>
+
+<h5>Grouped && Multiple && field</h5>
+<p-autoComplete
+    [(ngModel)]="selectedCity"
+    [group]="true"
+    [suggestions]="filteredGroups"
+    (completeMethod)="filterGroupedCity($event)"
+    field="label"
+    [multiple]="true"
+    [dropdown]="true"
+>
+    <ng-template
+        let-group
+        pTemplate="group"
+    >
+        <div class="flex align-items-center">
+            <span>- {{ group.label }}</span>
+        </div>
+    </ng-template>
+    <ng-template
+        let-country
+        pTemplate="item"
+    >
+        <div class="country-item">
+            <div>. {{ country.label }}</div>
+        </div>
+    </ng-template>
+    <ng-template let-data pTemplate="selectedItem">
+        <span style="font-size:18px"> - ! {{ data.value }} ! - </span>
+    </ng-template>
+</p-autoComplete>
+
+<h5>Virtual Scroll (10000 Items)</h5>
+<p-autoComplete
+    [(ngModel)]="selectedItem"
+    [virtualScroll]="true"
+    [suggestions]="filteredItems"
+    [itemSize]="34"
+    (completeMethod)="filterItems($event)"
+    field="label"
+    [dropdown]="true"
+>
+</p-autoComplete>
+
+<h5>Multiple</h5>
+<span class="p-fluid">
+    <p-autoComplete
+        [(ngModel)]="selectedCountries"
+        [suggestions]="filteredCountries"
+        (completeMethod)="filterCountry($event)"
+        field="name"
+        [multiple]="true"
+    >
+    </p-autoComplete>
+</span>
