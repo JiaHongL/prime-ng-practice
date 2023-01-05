@@ -33,7 +33,7 @@ import { FloatLabelComponent } from './float-label/float-label.component';
     ReactiveFormsModule,
     FormRoutingModule,
     PrimeNgModule,
-    FormsModule
+    FormsModule,
   ]
 })
 export class FormModule { }

@@ -10,6 +10,12 @@ import { ChipsModule } from 'primeng/chips';
 import { ColorPickerModule } from 'primeng/colorpicker';
 import { DropdownModule } from 'primeng/dropdown';
 import { EditorModule } from 'primeng/editor';
+import { InputMaskModule } from 'primeng/inputmask';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { MultiSelectModule } from 'primeng/multiselect';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { InputTextModule } from 'primeng/inputtext';
+import {PasswordModule} from 'primeng/password';
 
 @NgModule({
   exports: [
@@ -22,7 +28,15 @@ import { EditorModule } from 'primeng/editor';
     ChipsModule,
     ColorPickerModule,
     DropdownModule,
-    EditorModule
+    EditorModule,
+    CalendarModule,
+    ChipsModule,
+    InputMaskModule,
+    InputNumberModule,
+    MultiSelectModule,
+    InputTextareaModule,
+    InputTextModule,
+    PasswordModule
   ],
 })
 export class PrimeNgModule { }
