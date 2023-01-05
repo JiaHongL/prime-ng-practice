@@ -9,6 +9,7 @@ import { CheckboxModule } from 'primeng/checkbox';
 import { ChipsModule } from 'primeng/chips';
 import { ColorPickerModule } from 'primeng/colorpicker';
 import { DropdownModule } from 'primeng/dropdown';
+import { EditorModule } from 'primeng/editor';
 
 @NgModule({
   exports: [
@@ -20,7 +21,8 @@ import { DropdownModule } from 'primeng/dropdown';
     CheckboxModule,
     ChipsModule,
     ColorPickerModule,
-    DropdownModule
+    DropdownModule,
+    EditorModule
   ],
 })
 export class PrimeNgModule { }
