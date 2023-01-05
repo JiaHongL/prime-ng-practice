@@ -6,6 +6,7 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
 import { CalendarModule } from 'primeng/calendar';
 import { CascadeSelectModule } from 'primeng/cascadeselect';
 import { CheckboxModule } from 'primeng/checkbox';
+import { ChipsModule } from 'primeng/chips';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CheckboxModule } from 'primeng/checkbox';
     AutoCompleteModule,
     CalendarModule,
     CascadeSelectModule,
-    CheckboxModule
+    CheckboxModule,
+    ChipsModule
   ],
 })
 export class PrimeNgModule { }

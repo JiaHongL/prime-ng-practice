@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChipsComponent implements OnInit {
 
-  constructor() { }
+  values1!: string[];
+    
+  values2!: string[];
+
+  values3!: string[];
+
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }
