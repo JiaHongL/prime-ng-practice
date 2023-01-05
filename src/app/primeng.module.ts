@@ -8,6 +8,7 @@ import { CascadeSelectModule } from 'primeng/cascadeselect';
 import { CheckboxModule } from 'primeng/checkbox';
 import { ChipsModule } from 'primeng/chips';
 import { ColorPickerModule } from 'primeng/colorpicker';
+import { DropdownModule } from 'primeng/dropdown';
 
 @NgModule({
   exports: [
@@ -18,7 +19,8 @@ import { ColorPickerModule } from 'primeng/colorpicker';
     CascadeSelectModule,
     CheckboxModule,
     ChipsModule,
-    ColorPickerModule
+    ColorPickerModule,
+    DropdownModule
   ],
 })
 export class PrimeNgModule { }

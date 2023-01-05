@@ -44,7 +44,7 @@ export class AppComponent {
             routerLink: '/form/color-picker'
           },
           {
-            label: 'Dropdown 顏色選擇器',
+            label: 'Dropdown 下拉選單',
             routerLink: '/form/dropdown'
           },
           {
