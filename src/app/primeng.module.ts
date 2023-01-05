@@ -7,7 +7,7 @@ import { CalendarModule } from 'primeng/calendar';
 import { CascadeSelectModule } from 'primeng/cascadeselect';
 import { CheckboxModule } from 'primeng/checkbox';
 import { ChipsModule } from 'primeng/chips';
-
+import { ColorPickerModule } from 'primeng/colorpicker';
 
 @NgModule({
   exports: [
@@ -17,7 +17,8 @@ import { ChipsModule } from 'primeng/chips';
     CalendarModule,
     CascadeSelectModule,
     CheckboxModule,
-    ChipsModule
+    ChipsModule,
+    ColorPickerModule
   ],
 })
 export class PrimeNgModule { }
