@@ -2,13 +2,12 @@
     padding: 10px;
 }
 
-::ng-deep 
-.p-submenu-list{
+::ng-deep .p-submenu-list {
+    width: auto !important;
     .p-menuitem {
-        .p-menuitem-text{
+        .p-menuitem-text {
+            width: auto;
             white-space: nowrap;
         }
     }
-    
 }
-
