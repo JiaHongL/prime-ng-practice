@@ -59,6 +59,58 @@ export class AppComponent {
         ]
       },
       {
+        label: 'Button 按鈕',
+        routerLink: ''
+      },
+      {
+        label: 'Data 資料',
+        routerLink: ''
+      },
+      {
+        label: 'Panel 面板',
+        routerLink: ''
+      },
+      {
+        label: 'Overlay 遮罩',
+        routerLink: ''
+      },
+      {
+        label: 'File 檔案',
+        routerLink: ''
+      },
+      {
+        label: 'Menu 選單',
+        routerLink: ''
+      },
+      {
+        label: 'Chart 圖表',
+        routerLink: ''
+      },
+      {
+        label: 'Message 訊息',
+        routerLink: ''
+      },
+      {
+        label: 'Media 媒體',
+        routerLink: ''
+      },
+      {
+        label: 'Drag and Drop 拖放',
+        routerLink: ''
+      },
+      {
+        label: 'Misc 雜項',
+        routerLink: ''
+      },
+      {
+        label: 'Directive',
+        routerLink: ''
+      },
+      {
+        label: 'Utilities 實用類',
+        routerLink: ''
+      },
+      {
         label: 'File',
         items: [{
           label: 'New',
