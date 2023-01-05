@@ -17,10 +17,13 @@ export class AppComponent {
           routerLink:'/icon'
         },
         {
-          label: 'Form',
+          label: 'Form 表單',
           items: [{
-            label: 'AutoComplete',
+            label: 'AutoComplete 自動完成',
             routerLink:'/form/auto-complete'
+          },{
+            label: 'Calendar 日曆',
+            routerLink:'/form/calendar'
           }]
         },
         {

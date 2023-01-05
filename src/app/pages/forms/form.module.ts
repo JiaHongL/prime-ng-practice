@@ -7,10 +7,12 @@ import { FormsModule }   from '@angular/forms';
 import { FormRoutingModule } from './form-routing.module';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { PrimeNgModule } from 'src/app/primeng.module';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
-    AutoCompleteComponent
+    AutoCompleteComponent,
+    CalendarComponent
   ],
   imports: [
     CommonModule,
