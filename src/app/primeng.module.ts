@@ -4,6 +4,7 @@ import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { CalendarModule } from 'primeng/calendar';
+import { CascadeSelectModule } from 'primeng/cascadeselect';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { CalendarModule } from 'primeng/calendar';
     MenubarModule,
     MenuModule,
     AutoCompleteModule,
-    CalendarModule
+    CalendarModule,
+    CascadeSelectModule
   ],
 })
 export class PrimeNgModule { }
