@@ -20,6 +20,9 @@ import { RadioButtonModule } from 'primeng/radiobutton';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { TreeSelectModule } from 'primeng/treeselect';
 import { KnobModule } from 'primeng/knob';
+import { KeyFilterModule } from 'primeng/keyfilter';
+import { MessagesModule } from 'primeng/messages';
+import { MessageModule } from 'primeng/message';
 
 @NgModule({
   exports: [
@@ -44,7 +47,10 @@ import { KnobModule } from 'primeng/knob';
     RadioButtonModule,
     InputSwitchModule,
     TreeSelectModule,
-    KnobModule
+    KnobModule,
+    KeyFilterModule,
+    MessageModule,
+    MessagesModule
   ],
 })
 export class PrimeNgModule { }

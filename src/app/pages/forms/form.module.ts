@@ -34,6 +34,7 @@ import { SelectButtonComponent } from './select-button/select-button.component';
 import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
 import { TreeSelectComponent } from './tree-select/tree-select.component';
 import { TriStateCheckboxComponent } from './tri-state-checkbox/tri-state-checkbox.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
