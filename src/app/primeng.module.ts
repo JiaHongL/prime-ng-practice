@@ -23,6 +23,8 @@ import { KnobModule } from 'primeng/knob';
 import { KeyFilterModule } from 'primeng/keyfilter';
 import { MessagesModule } from 'primeng/messages';
 import { MessageModule } from 'primeng/message';
+import { ListboxModule } from 'primeng/listbox';
+
 
 @NgModule({
   exports: [
@@ -50,7 +52,8 @@ import { MessageModule } from 'primeng/message';
     KnobModule,
     KeyFilterModule,
     MessageModule,
-    MessagesModule
+    MessagesModule,
+    ListboxModule
   ],
 })
 export class PrimeNgModule { }
