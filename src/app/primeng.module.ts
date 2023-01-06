@@ -25,6 +25,7 @@ import { MessagesModule } from 'primeng/messages';
 import { MessageModule } from 'primeng/message';
 import { ListboxModule } from 'primeng/listbox';
 import { DividerModule } from 'primeng/divider';
+import { RatingModule } from 'primeng/rating';
 
 @NgModule({
   exports: [
@@ -54,7 +55,8 @@ import { DividerModule } from 'primeng/divider';
     MessageModule,
     MessagesModule,
     ListboxModule,
-    DividerModule
+    DividerModule,
+    RatingModule
   ],
 })
 export class PrimeNgModule { }
