@@ -1,1 +1,14 @@
-<p>input-switch works!</p>
+<p-inputSwitch [(ngModel)]="checked"></p-inputSwitch>
+
+<br>
+
+<p-inputSwitch [(ngModel)]="checked2"></p-inputSwitch>
+{{checked2}}
+<br>
+
+<p-inputSwitch
+    [(ngModel)]="checked3"
+    trueValue="Yes"
+    falseValue="No"
+></p-inputSwitch>
+{{checked3}}

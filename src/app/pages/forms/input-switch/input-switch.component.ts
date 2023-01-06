@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputSwitchComponent implements OnInit {
 
+  checked!: boolean;
+
+  checked2 = true;
+
+  checked3: 'Yes' | 'No' = 'Yes';
+
   constructor() { }
 
   ngOnInit(): void {
