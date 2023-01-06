@@ -22,6 +22,18 @@ import { InputTextComponent } from './input-text/input-text.component';
 import { TextareaComponent } from './textarea/textarea.component';
 import { InputNumberComponent } from './input-number/input-number.component';
 import { InvalidStateComponent } from './invalid-state/invalid-state.component';
+import { KnobComponent } from './knob/knob.component';
+import { KeyFilterComponent } from './key-filter/key-filter.component';
+import { ListboxComponent } from './listbox/listbox.component';
+import { MultiSelectComponent } from './multi-select/multi-select.component';
+import { PasswordComponent } from './password/password.component';
+import { RadioButtonComponent } from './radio-button/radio-button.component';
+import { RatingComponent } from './rating/rating.component';
+import { SliderComponent } from './slider/slider.component';
+import { SelectButtonComponent } from './select-button/select-button.component';
+import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
+import { TreeSelectComponent } from './tree-select/tree-select.component';
+import { TriStateCheckboxComponent } from './tri-state-checkbox/tri-state-checkbox.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +53,18 @@ import { InvalidStateComponent } from './invalid-state/invalid-state.component';
     TextareaComponent,
     InputNumberComponent,
     InvalidStateComponent,
+    KnobComponent,
+    KeyFilterComponent,
+    ListboxComponent,
+    MultiSelectComponent,
+    PasswordComponent,
+    RadioButtonComponent,
+    RatingComponent,
+    SliderComponent,
+    SelectButtonComponent,
+    ToggleButtonComponent,
+    TreeSelectComponent,
+    TriStateCheckboxComponent,
   ],
   imports: [
     CommonModule,

@@ -17,6 +17,18 @@ import { InputMaskComponent } from './input-mask/input-mask.component';
 import { InputNumberComponent } from './input-number/input-number.component';
 import { InvalidStateComponent } from './invalid-state/invalid-state.component';
 import { TextareaComponent } from './textarea/textarea.component';
+import { KnobComponent } from './knob/knob.component';
+import { KeyFilterComponent } from './key-filter/key-filter.component';
+import { ListboxComponent } from './listbox/listbox.component';
+import { MultiSelectComponent } from './multi-select/multi-select.component';
+import { PasswordComponent } from './password/password.component';
+import { RadioButtonComponent } from './radio-button/radio-button.component';
+import { RatingComponent } from './rating/rating.component';
+import { SliderComponent } from './slider/slider.component';
+import { SelectButtonComponent } from './select-button/select-button.component';
+import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
+import { TreeSelectComponent } from './tree-select/tree-select.component';
+import { TriStateCheckboxComponent } from './tri-state-checkbox/tri-state-checkbox.component';
 
 const routes: Routes = [
   { path: 'auto-complete', component: AutoCompleteComponent },
@@ -35,7 +47,19 @@ const routes: Routes = [
   { path: 'input-textarea', component: TextareaComponent },
   { path: 'input-number', component: InputNumberComponent },
   { path: 'input-text', component: InputTextComponent },
-  { path: 'invalid-state', component: InvalidStateComponent }
+  { path: 'invalid-state', component: InvalidStateComponent },
+  { path: 'knob', component: KnobComponent },
+  { path: 'key-filter', component: KeyFilterComponent },
+  { path: 'list-box', component: ListboxComponent },
+  { path: 'multi-select', component: MultiSelectComponent },
+  { path: 'password', component: PasswordComponent },
+  { path: 'radio-button', component: RadioButtonComponent },
+  { path: 'rating', component: RatingComponent },
+  { path: 'slider', component: SliderComponent },
+  { path: 'select-button', component: SelectButtonComponent },
+  { path: 'toggle-button', component: ToggleButtonComponent },
+  { path: 'tree-select', component: TreeSelectComponent },
+  { path: 'tri-state-checkbox', component: TriStateCheckboxComponent }
 ];
 
 @NgModule({

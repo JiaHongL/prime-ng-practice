@@ -82,8 +82,55 @@ export class AppComponent {
           {
             label: 'InvalidState 驗證無效狀態',
             routerLink: '/form/invalid-state'
-          }
-
+          },
+          {
+            label: 'Knob 旋轉鈕',
+            routerLink: '/form/knob'
+          },
+          {
+            label: 'KeyFilter 輸入過濾',
+            routerLink: '/form/key-filter'
+          },
+          {
+            label: 'ListBox 列表框',
+            routerLink: '/form/list-box'
+          },
+          {
+            label: 'MultiSelect 多選',
+            routerLink: '/form/multi-select'
+          },
+          {
+            label: 'Password 密碼輸入框',
+            routerLink: '/form/password'
+          },
+          {
+            label: 'RadioButton 單選按鈕',
+            routerLink: '/form/radio-button'
+          },
+          {
+            label: 'Rating 評分',
+            routerLink: '/form/rating'
+          },
+          {
+            label: 'Slider 滑塊控件',
+            routerLink: '/form/slider'
+          },
+          {
+            label: 'SelectButton 選擇按鈕(群組按鈕)',
+            routerLink: '/form/select-button'
+          },
+          {
+            label: 'ToggleButton 切換按鈕',
+            routerLink: '/form/toggle-button'
+          },
+          {
+            label: 'TreeSelect 樹狀下拉選擇',
+            routerLink: '/form/tree-select'
+          },
+          {
+            label: 'TriStateCheckbox 三種狀態的複選',
+            routerLink: '/form/tri-state-checkbox'
+          },
         ]
       },
       {
