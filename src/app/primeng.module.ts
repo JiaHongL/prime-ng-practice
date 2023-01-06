@@ -16,6 +16,7 @@ import { MultiSelectModule } from 'primeng/multiselect';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { InputTextModule } from 'primeng/inputtext';
 import {PasswordModule} from 'primeng/password';
+import { RadioButtonModule } from 'primeng/radiobutton'
 
 @NgModule({
   exports: [
@@ -36,7 +37,8 @@ import {PasswordModule} from 'primeng/password';
     MultiSelectModule,
     InputTextareaModule,
     InputTextModule,
-    PasswordModule
+    PasswordModule,
+    RadioButtonModule
   ],
 })
 export class PrimeNgModule { }
