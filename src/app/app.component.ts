@@ -68,7 +68,7 @@ export class AppComponent {
             routerLink: '/form/input-switch'
           },
           {
-            label: 'InputText 輸入本文',
+            label: 'InputText 輸入框',
             routerLink: '/form/input-text'
           },
           {
