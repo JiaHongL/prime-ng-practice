@@ -1,1 +1,120 @@
-<p>multi-select works!</p>
+<h5>Template Mode</h5>
+<p-multiSelect
+    [options]="cities"
+    [(ngModel)]="selectedCities1"
+    defaultLabel="Select a City"
+    optionLabel="name"
+    selectedItemsLabel="{0} items selected"
+></p-multiSelect>
+
+<h5>Elipsis Mode</h5>
+<p-multiSelect
+    [options]="cities"
+    [(ngModel)]="selectedCities2"
+    defaultLabel="Select a City"
+    optionLabel="name"
+></p-multiSelect>
+
+<h5>Chips</h5>
+<p-multiSelect
+    [options]="cities"
+    [(ngModel)]="selectedCities3"
+    defaultLabel="Select a City"
+    optionLabel="name"
+    display="chip"
+></p-multiSelect>
+
+<h5>Grouped</h5>
+<p-multiSelect
+    [options]="groupedCities"
+    [group]="true"
+    [(ngModel)]="selectedCities4"
+    defaultLabel="Select a City"
+    scrollHeight="250px"
+    display="chip"
+>
+    <ng-template
+        let-group
+        pTemplate="group"
+    >
+        <div class="flex align-items-center">
+            <!-- <img
+                src="assets/showcase/images/demo/flag/flag_placeholder.png"
+                [class]="'mr-2 flag flag-' + group.value"
+                style="width: 20px"
+            > -->
+            <span>{{group.label}}</span>
+        </div>
+    </ng-template>
+</p-multiSelect>
+
+<h5>Advanced with Templating and Filtering</h5>
+<p-multiSelect
+    [options]="countries"
+    [(ngModel)]="selectedCountries1"
+    defaultLabel="Select a Country"
+    optionLabel="name"
+    class="multiselect-custom"
+>
+    <ng-template
+        let-value
+        pTemplate="selectedItems"
+    >
+        <div
+            class="country-item country-item-value"
+            *ngFor="let option of selectedCountries1"
+        >
+            <!-- <img
+                src="assets/showcase/images/demo/flag/flag_placeholder.png"
+                [class]="'flag flag-' + option.code.toLowerCase()"
+            > -->
+            <div>{{option.name}}</div>
+        </div>
+        <div
+            *ngIf="!selectedCountries1 || selectedCountries1.length === 0"
+            class="country-placeholder"
+        >
+            Select Countries
+        </div>
+    </ng-template>
+    <ng-template
+        let-country
+        pTemplate="item"
+    >
+        <div class="country-item">
+            <!-- <img
+                src="assets/showcase/images/demo/flag/flag_placeholder.png"
+                [class]="'flag flag-' + country.code.toLowerCase()"
+            > -->
+            <div>{{country.name}}</div>
+        </div>
+    </ng-template>
+</p-multiSelect>
+
+<h5>Virtual Scroll</h5>
+<p-multiSelect
+    [options]="virtualCountries"
+    [showToggleAll]="false"
+    [(ngModel)]="selectedCountries2"
+    optionLabel="name"
+    [virtualScroll]="true"
+    [filter]="true"
+    [itemSize]="34"
+    class="multiselect-custom-virtual-scroll"
+>
+    <ng-template
+        let-country
+        pTemplate="item"
+    >
+        <div class="country-item">
+            <!-- <img
+                src="assets/showcase/images/demo/flag/flag_placeholder.png"
+                [class]="'flag flag-' + country.code.toLowerCase()"
+            > -->
+            <div>{{country.name}}</div>
+        </div>
+    </ng-template>
+</p-multiSelect>
+
+<h5>Custom Label</h5>
+<p-multiSelect [options]="cities" [(ngModel)]="selectedCities5" optionLabel="name" [maxSelectedLabels]="2" [selectedItemsLabel]="'已選擇 {0} 項目'"></p-multiSelect>
