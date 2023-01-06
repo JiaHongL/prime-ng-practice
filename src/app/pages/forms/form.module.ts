@@ -15,6 +15,13 @@ import { ColorPickerComponent } from './color-picker/color-picker.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { EditorComponent } from './editor/editor.component';
 import { FloatLabelComponent } from './float-label/float-label.component';
+import { InputGroupComponent } from './input-group/input-group.component';
+import { InputMaskComponent } from './input-mask/input-mask.component';
+import { InputSwitchComponent } from './input-switch/input-switch.component';
+import { InputTextComponent } from './input-text/input-text.component';
+import { TextareaComponent } from './textarea/textarea.component';
+import { InputNumberComponent } from './input-number/input-number.component';
+import { InvalidStateComponent } from './invalid-state/invalid-state.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +33,14 @@ import { FloatLabelComponent } from './float-label/float-label.component';
     ColorPickerComponent,
     DropdownComponent,
     EditorComponent,
-    FloatLabelComponent
+    FloatLabelComponent,
+    InputGroupComponent,
+    InputMaskComponent,
+    InputSwitchComponent,
+    InputTextComponent,
+    TextareaComponent,
+    InputNumberComponent,
+    InvalidStateComponent,
   ],
   imports: [
     CommonModule,

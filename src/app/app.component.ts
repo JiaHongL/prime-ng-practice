@@ -22,7 +22,7 @@ export class AppComponent {
           {
             label: 'AutoComplete 自動完成',
             routerLink: '/form/auto-complete'
-          }, 
+          },
           {
             label: 'Calendar 日曆',
             routerLink: '/form/calendar'
@@ -40,7 +40,7 @@ export class AppComponent {
             routerLink: '/form/chips'
           },
           {
-            label: 'Color-picker 顏色選擇器',
+            label: 'ColorPicker 顏色選擇器',
             routerLink: '/form/color-picker'
           },
           {
@@ -52,9 +52,37 @@ export class AppComponent {
             routerLink: '/form/editor'
           },
           {
-            label: 'Float-label 浮動標籤',
+            label: 'FloatLabel 浮動標籤',
             routerLink: '/form/float-label'
           },
+          {
+            label: 'InputGroup 輸入框群組',
+            routerLink: '/form/input-group'
+          },
+          {
+            label: 'InputMask 輸入框遮罩',
+            routerLink: '/form/input-mask'
+          },
+          {
+            label: 'InputSwitch 滑動選擇框',
+            routerLink: '/form/input-switch'
+          },
+          {
+            label: 'InputText 輸入本文',
+            routerLink: '/form/input-text'
+          },
+          {
+            label: 'InputTextarea 多行輸入',
+            routerLink: '/form/input-textarea'
+          },
+          {
+            label: 'InputNumber 數字輸入框',
+            routerLink: '/form/input-number'
+          },
+          {
+            label: 'InvalidState 驗證無效狀態',
+            routerLink: '/form/invalid-state'
+          }
 
         ]
       },

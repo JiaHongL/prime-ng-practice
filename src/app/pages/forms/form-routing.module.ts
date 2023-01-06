@@ -10,6 +10,13 @@ import { ChipsComponent } from './chips/chips.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { EditorComponent } from './editor/editor.component';
 import { FloatLabelComponent } from './float-label/float-label.component';
+import { InputGroupComponent } from './input-group/input-group.component';
+import { InputSwitchComponent } from './input-switch/input-switch.component';
+import { InputTextComponent } from './input-text/input-text.component';
+import { InputMaskComponent } from './input-mask/input-mask.component';
+import { InputNumberComponent } from './input-number/input-number.component';
+import { InvalidStateComponent } from './invalid-state/invalid-state.component';
+
 
 const routes: Routes = [
   { path: 'auto-complete', component: AutoCompleteComponent },
@@ -21,6 +28,14 @@ const routes: Routes = [
   { path: 'dropdown', component: DropdownComponent },
   { path: 'editor', component: EditorComponent },
   { path: 'float-label', component: FloatLabelComponent },
+  { path: 'input-group', component: InputGroupComponent },
+  { path: 'input-mask', component: InputMaskComponent },
+  { path: 'input-switch', component: InputSwitchComponent },
+  { path: 'input-text', component: InputTextComponent },
+  { path: 'input-textarea', component: InputTextComponent },
+  { path: 'input-number', component: InputNumberComponent },
+  { path: 'input-text', component: InputTextComponent },
+  { path: 'invalid-state', component: InvalidStateComponent }
 ];
 
 @NgModule({
