@@ -16,7 +16,7 @@ import { InputTextComponent } from './input-text/input-text.component';
 import { InputMaskComponent } from './input-mask/input-mask.component';
 import { InputNumberComponent } from './input-number/input-number.component';
 import { InvalidStateComponent } from './invalid-state/invalid-state.component';
-
+import { TextareaComponent } from './textarea/textarea.component';
 
 const routes: Routes = [
   { path: 'auto-complete', component: AutoCompleteComponent },
@@ -32,7 +32,7 @@ const routes: Routes = [
   { path: 'input-mask', component: InputMaskComponent },
   { path: 'input-switch', component: InputSwitchComponent },
   { path: 'input-text', component: InputTextComponent },
-  { path: 'input-textarea', component: InputTextComponent },
+  { path: 'input-textarea', component: TextareaComponent },
   { path: 'input-number', component: InputNumberComponent },
   { path: 'input-text', component: InputTextComponent },
   { path: 'invalid-state', component: InvalidStateComponent }
