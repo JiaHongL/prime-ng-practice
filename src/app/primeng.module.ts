@@ -18,6 +18,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { InputSwitchModule } from 'primeng/inputswitch';
+import { TreeSelectModule } from 'primeng/treeselect'
 
 @NgModule({
   exports: [
@@ -40,7 +41,8 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     InputTextModule,
     PasswordModule,
     RadioButtonModule,
-    InputSwitchModule
+    InputSwitchModule,
+    TreeSelectModule
   ],
 })
 export class PrimeNgModule { }

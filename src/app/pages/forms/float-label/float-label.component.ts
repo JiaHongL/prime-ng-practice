@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CountryService } from '../auto-complete/country.service';
+import { CountryService } from '../../../services/country.service';
 
 @Component({
   selector: 'app-float-label',

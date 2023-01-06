@@ -3,7 +3,7 @@ import { FormControl, Validators } from '@angular/forms';
 
 import { FilterService, SelectItemGroup } from 'primeng/api';
 
-import { CountryService } from './country.service';
+import { CountryService } from '../../../services/country.service';
 
 @Component({
   templateUrl: './auto-complete.component.html',
