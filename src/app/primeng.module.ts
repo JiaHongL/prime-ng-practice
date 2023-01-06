@@ -29,6 +29,7 @@ import { RatingModule } from 'primeng/rating';
 import { SliderModule } from "primeng/slider";
 import { SelectButtonModule } from "primeng/selectbutton";
 import { ToggleButtonModule } from 'primeng/togglebutton';
+import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
 
 @NgModule({
   exports: [
@@ -62,7 +63,8 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
     RatingModule,
     SliderModule,
     SelectButtonModule,
-    ToggleButtonModule
+    ToggleButtonModule,
+    TriStateCheckboxModule
   ],
 })
 export class PrimeNgModule { }

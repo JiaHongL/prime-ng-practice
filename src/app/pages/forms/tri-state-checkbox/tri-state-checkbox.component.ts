@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TriStateCheckboxComponent implements OnInit {
 
+  value: any;
+
   constructor() { }
 
   ngOnInit(): void {
