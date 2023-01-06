@@ -1,1 +1,36 @@
-<p>tree-select works!</p>
+<h5>Single</h5>
+<p-treeSelect
+    [(ngModel)]="selectedNode"
+    [options]="nodes1"
+    placeholder="Select Item"
+></p-treeSelect>
+
+<h5>Multiple</h5>
+<p-treeSelect
+    [(ngModel)]="selectedNodes1"
+    [options]="nodes2"
+    [metaKeySelection]="false"
+    selectionMode="multiple"
+    placeholder="Select Item"
+></p-treeSelect>
+
+<h5>Checkbox</h5>
+<p-treeSelect
+    [(ngModel)]="selectedNodes2"
+    [options]="nodes3"
+    display="chip"
+    [metaKeySelection]="false"
+    selectionMode="checkbox"
+    placeholder="Select Item"
+></p-treeSelect>
+
+<h5>Filter</h5>
+<p-treeSelect
+    [(ngModel)]="selectedNodes3"
+    [options]="nodes4"
+    [metaKeySelection]="false"
+    selectionMode="checkbox"
+    placeholder="Select Item"
+    [filter]="true"
+    [filterInputAutoFocus]="true"
+></p-treeSelect>
