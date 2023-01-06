@@ -26,8 +26,9 @@ import { MessageModule } from 'primeng/message';
 import { ListboxModule } from 'primeng/listbox';
 import { DividerModule } from 'primeng/divider';
 import { RatingModule } from 'primeng/rating';
-import { SliderModule  } from "primeng/slider";
-import { SelectButtonModule  } from "primeng/selectbutton";
+import { SliderModule } from "primeng/slider";
+import { SelectButtonModule } from "primeng/selectbutton";
+import { ToggleButtonModule } from 'primeng/togglebutton';
 
 @NgModule({
   exports: [
@@ -60,7 +61,8 @@ import { SelectButtonModule  } from "primeng/selectbutton";
     DividerModule,
     RatingModule,
     SliderModule,
-    SelectButtonModule
+    SelectButtonModule,
+    ToggleButtonModule
   ],
 })
 export class PrimeNgModule { }

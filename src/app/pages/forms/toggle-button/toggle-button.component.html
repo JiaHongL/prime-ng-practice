@@ -1,1 +1,17 @@
-<p>toggle-button works!</p>
+<h5>Basic</h5>
+<p-toggleButton
+    [(ngModel)]="checked1"
+    onIcon="pi pi-check"
+    offIcon="pi pi-times"
+></p-toggleButton>
+
+<h5>Customized</h5>
+<p-toggleButton
+    [(ngModel)]="checked2"
+    iconPos="right"
+    onLabel="I confirm"
+    offLabel="I reject"
+    onIcon="pi pi-check"
+    offIcon="pi pi-times"
+    [style]="{'width': '10rem'}"
+></p-toggleButton>

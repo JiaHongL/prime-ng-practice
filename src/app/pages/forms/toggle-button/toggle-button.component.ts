@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToggleButtonComponent implements OnInit {
 
+  checked1: boolean = false;
+
+  checked2: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
