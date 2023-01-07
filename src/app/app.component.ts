@@ -135,7 +135,20 @@ export class AppComponent {
       },
       {
         label: 'Button 按鈕',
-        routerLink: ''
+        items: [
+          {
+            label: 'Button 按鈕',
+            routerLink: '/button/button'
+          },
+          {
+            label: 'SplitButton 分割按鈕(下拉式按鈕)',
+            routerLink: '/button/split-button'
+          },
+          {
+            label: 'Speed-Dial 快速點擊按鈕',
+            routerLink: '/button/speed-dial'
+          }
+        ]
       },
       {
         label: 'Data 資料',
