@@ -32,6 +32,8 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
 import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
 import { ButtonModule } from 'primeng/button';
 import { SplitButtonModule } from 'primeng/splitbutton';
+import { SpeedDialModule } from 'primeng/speeddial';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   exports: [
@@ -68,7 +70,9 @@ import { SplitButtonModule } from 'primeng/splitbutton';
     ToggleButtonModule,
     TriStateCheckboxModule,
     ButtonModule,
-    SplitButtonModule
+    SplitButtonModule,
+    SpeedDialModule,
+    ToastModule
   ],
 })
 export class PrimeNgModule { }
