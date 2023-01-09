@@ -34,6 +34,7 @@ import { ButtonModule } from 'primeng/button';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { SpeedDialModule } from 'primeng/speeddial';
 import { ToastModule } from 'primeng/toast';
+import { DataViewModule } from 'primeng/dataview';
 
 @NgModule({
   exports: [
@@ -72,7 +73,8 @@ import { ToastModule } from 'primeng/toast';
     ButtonModule,
     SplitButtonModule,
     SpeedDialModule,
-    ToastModule
+    ToastModule,
+    DataViewModule
   ],
 })
 export class PrimeNgModule { }
