@@ -39,6 +39,7 @@ import { ToastModule } from 'primeng/toast';
 import { DataViewModule } from 'primeng/dataview';
 import { GMapModule } from 'primeng/gmap';
 import { DialogModule } from 'primeng/dialog';
+import { OrderListModule } from 'primeng/orderlist';
 
 @NgModule({
   exports: [
@@ -81,7 +82,8 @@ import { DialogModule } from 'primeng/dialog';
     DataViewModule,
     FullCalendarModule,
     GMapModule,
-    DialogModule
+    DialogModule,
+    OrderListModule
   ],
 })
 export class PrimeNgModule { }

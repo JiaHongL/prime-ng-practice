@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
+import { Product, ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-order-list',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderListComponent implements OnInit {
 
-  constructor() { }
+  selectedProducts: Product[] = [];
 
-  ngOnInit(): void {
+  products!: Product[];
+
+  constructor(private productService: ProductService, private primengConfig: PrimeNGConfig) { }
+
+  ngOnInit() {
+    this.productService.getProductsSmall().then(cars => this.products = cars);
+    this.primengConfig.ripple = true;
   }
 
 }
