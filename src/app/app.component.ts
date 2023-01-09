@@ -152,7 +152,40 @@ export class AppComponent {
       },
       {
         label: 'Data 資料',
-        routerLink: ''
+        items: [
+          {
+            label: 'Data-View 數據顯示',
+            routerLink: '/data/data-view'
+          },
+          {
+            label: 'FullCalendar 行事曆',
+            routerLink: '/data/full-calendar'
+          },
+          {
+            label: 'G-Map google 地圖',
+            routerLink: '/data/g-map'
+          },
+          {
+            label: 'Order-List 排序清單',
+            routerLink: '/data/order-list'
+          },
+          {
+            label: 'Org-Chart 組織圖',
+            routerLink: '/data/org-chart'
+          },
+          {
+            label: 'Paginator 分頁器',
+            routerLink: '/data/paginator'
+          },
+          {
+            label: 'Org-Chart 組織圖',
+            routerLink: '/data/org-chart'
+          },
+          {
+            label: 'Pick-List 選取清單 (可拖曳)',
+            routerLink: '/data/pick-list'
+          },
+        ]
       },
       {
         label: 'Panel 面板',
