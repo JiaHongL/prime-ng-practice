@@ -41,6 +41,7 @@ import { GMapModule } from 'primeng/gmap';
 import { DialogModule } from 'primeng/dialog';
 import { OrderListModule } from 'primeng/orderlist';
 import { OrganizationChartModule } from 'primeng/organizationchart';
+import { PaginatorModule } from 'primeng/paginator';
 
 @NgModule({
   exports: [
@@ -85,7 +86,8 @@ import { OrganizationChartModule } from 'primeng/organizationchart';
     GMapModule,
     DialogModule,
     OrderListModule,
-    OrganizationChartModule
+    OrganizationChartModule,
+    PaginatorModule
   ],
 })
 export class PrimeNgModule { }

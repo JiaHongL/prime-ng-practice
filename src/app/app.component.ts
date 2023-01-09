@@ -178,10 +178,6 @@ export class AppComponent {
             routerLink: '/data/paginator'
           },
           {
-            label: 'Org-Chart 組織圖',
-            routerLink: '/data/org-chart'
-          },
-          {
             label: 'Pick-List 選取清單 (可拖曳)',
             routerLink: '/data/pick-list'
           },

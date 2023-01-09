@@ -5,11 +5,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './paginator.component.html',
   styleUrls: ['./paginator.component.scss']
 })
-export class PaginatorComponent implements OnInit {
+export class PaginatorComponent {
 
-  constructor() { }
+  first: number = 0;
 
-  ngOnInit(): void {
+  totalRecords: number = 120;
+
+  totalRecords2: number = 12;
+
+  onPageChange(event: any) {
+    this.first = event.first;
   }
 
+  refresh() {
+    this.first = 0;
+  }
 }
