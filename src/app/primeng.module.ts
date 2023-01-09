@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FullCalendarModule } from '@fullcalendar/angular';
 
 import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
@@ -74,7 +75,8 @@ import { DataViewModule } from 'primeng/dataview';
     SplitButtonModule,
     SpeedDialModule,
     ToastModule,
-    DataViewModule
+    DataViewModule,
+    FullCalendarModule
   ],
 })
 export class PrimeNgModule { }
