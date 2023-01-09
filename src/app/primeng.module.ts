@@ -40,6 +40,7 @@ import { DataViewModule } from 'primeng/dataview';
 import { GMapModule } from 'primeng/gmap';
 import { DialogModule } from 'primeng/dialog';
 import { OrderListModule } from 'primeng/orderlist';
+import { OrganizationChartModule } from 'primeng/organizationchart';
 
 @NgModule({
   exports: [
@@ -83,7 +84,8 @@ import { OrderListModule } from 'primeng/orderlist';
     FullCalendarModule,
     GMapModule,
     DialogModule,
-    OrderListModule
+    OrderListModule,
+    OrganizationChartModule
   ],
 })
 export class PrimeNgModule { }
