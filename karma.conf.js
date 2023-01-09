@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/primeng-ng-v13-practice'),
+      dir: require('path').join(__dirname, './coverage/primeng-ng-practice'),
       subdir: '.',
       reporters: [
         { type: 'html' },
