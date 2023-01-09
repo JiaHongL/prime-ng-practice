@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+
 import { FullCalendarModule } from '@fullcalendar/angular';
 
 import { MenuModule } from 'primeng/menu';
@@ -36,6 +37,8 @@ import { SplitButtonModule } from 'primeng/splitbutton';
 import { SpeedDialModule } from 'primeng/speeddial';
 import { ToastModule } from 'primeng/toast';
 import { DataViewModule } from 'primeng/dataview';
+import { GMapModule } from 'primeng/gmap';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   exports: [
@@ -76,7 +79,9 @@ import { DataViewModule } from 'primeng/dataview';
     SpeedDialModule,
     ToastModule,
     DataViewModule,
-    FullCalendarModule
+    FullCalendarModule,
+    GMapModule,
+    DialogModule
   ],
 })
 export class PrimeNgModule { }
