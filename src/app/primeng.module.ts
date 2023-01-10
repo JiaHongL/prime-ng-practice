@@ -45,6 +45,7 @@ import { PaginatorModule } from 'primeng/paginator';
 import { PickListModule } from 'primeng/picklist';
 import { TableModule } from 'primeng/table';
 import { ProgressBarModule } from 'primeng/progressbar';
+import { ContextMenuModule } from 'primeng/contextmenu';
 
 @NgModule({
   exports: [
@@ -93,7 +94,8 @@ import { ProgressBarModule } from 'primeng/progressbar';
     PaginatorModule,
     PickListModule,
     TableModule,
-    ProgressBarModule
+    ProgressBarModule,
+    ContextMenuModule
   ],
 })
 export class PrimeNgModule { }

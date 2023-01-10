@@ -1,1 +1,26 @@
-<p>context-menu works!</p>
+<h1> table 搭配 contextMenu，製作右鍵選單</h1>
+
+<p-toast></p-toast>
+
+<p-contextMenu #cm [model]="items"></p-contextMenu>
+
+<div class="card">
+    <p-table [value]="products" [(contextMenuSelection)]="selectedProduct" [contextMenu]="cm" dataKey="code">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+            <tr [pContextMenuRow]="product">
+                <td>{{product.code}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.category}}</td>
+                <td>{{product.price | currency: 'USD'}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

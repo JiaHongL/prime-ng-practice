@@ -245,7 +245,7 @@ export class AppComponent {
                 routerLink: '/data/table/virtual-scroll'
               },
               {
-                label: 'FlexScroll',
+                label: 'FlexScroll 自適大小',
                 routerLink: '/data/table/flex-scroll'
               },
               {
@@ -261,7 +261,7 @@ export class AppComponent {
                 routerLink: '/data/table/toggle'
               },
               {
-                label: 'Resize 調整',
+                label: 'Resize 拖拉調整欄位寬度',
                 routerLink: '/data/table/resize'
               },
               {
@@ -273,7 +273,7 @@ export class AppComponent {
                 routerLink: '/data/table/row-group'
               },
               {
-                label: 'ContextMenu',
+                label: 'ContextMenu 右鍵選單',
                 routerLink: '/data/table/context-menu'
               },
               {
