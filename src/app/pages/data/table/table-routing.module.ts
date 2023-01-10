@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { TemplatingComponent } from './templating/templating.component';
-import { ToggleButtonComponent } from '../../forms/toggle-button/toggle-button.component';
+import { ToggleComponent } from './toggle/toggle.component';
 import { ColGroupComponent } from './col-group/col-group.component';
 import { ContextMenuComponent } from './context-menu/context-menu.component';
 import { CrudComponent } from './crud/crud.component';
@@ -50,7 +50,7 @@ const routes: Routes = [
   { path: 'flex-scroll', component: FlexScrollComponent },
   { path: 'row-expand', component: RowExpandComponent },
   { path: 'edit', component: EditComponent },
-  { path: 'toggle', component: ToggleButtonComponent },
+  { path: 'toggle', component: ToggleComponent },
   { path: 'resize', component: ResizeComponent },
   { path: 'reorder', component: ReorderComponent },
   { path: 'row-group', component: RowGroupComponent },
