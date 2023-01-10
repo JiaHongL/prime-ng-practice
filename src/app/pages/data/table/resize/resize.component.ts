@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Customer, CustomerService } from 'src/app/services/customer.service';
+import { Product, ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-resize',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResizeComponent implements OnInit {
 
-  constructor() { }
+  products!: Product[];
 
-  ngOnInit(): void {
+  customers!: Customer[];
+
+  constructor(private productService: ProductService, private customerService: CustomerService) { }
+
+  ngOnInit() {
+      this.productService.getProductsSmall().then(data => this.products = data);
+      this.customerService.getCustomersLarge().then(customers => this.customers = customers);
   }
-
+  
 }
