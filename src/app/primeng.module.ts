@@ -43,6 +43,8 @@ import { OrderListModule } from 'primeng/orderlist';
 import { OrganizationChartModule } from 'primeng/organizationchart';
 import { PaginatorModule } from 'primeng/paginator';
 import { PickListModule } from 'primeng/picklist';
+import { TableModule } from 'primeng/table';
+import { ProgressBarModule } from 'primeng/progressbar';
 
 @NgModule({
   exports: [
@@ -89,7 +91,9 @@ import { PickListModule } from 'primeng/picklist';
     OrderListModule,
     OrganizationChartModule,
     PaginatorModule,
-    PickListModule
+    PickListModule,
+    TableModule,
+    ProgressBarModule
   ],
 })
 export class PrimeNgModule { }
