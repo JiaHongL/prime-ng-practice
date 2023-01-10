@@ -46,6 +46,9 @@ import { PickListModule } from 'primeng/picklist';
 import { TableModule } from 'primeng/table';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { ContextMenuModule } from 'primeng/contextmenu';
+import { ToolbarModule } from 'primeng/toolbar';
+import { FileUploadModule } from 'primeng/fileupload';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
 
 @NgModule({
   exports: [
@@ -95,7 +98,10 @@ import { ContextMenuModule } from 'primeng/contextmenu';
     PickListModule,
     TableModule,
     ProgressBarModule,
-    ContextMenuModule
+    ContextMenuModule,
+    ToolbarModule,
+    FileUploadModule,
+    ConfirmDialogModule
   ],
 })
 export class PrimeNgModule { }
