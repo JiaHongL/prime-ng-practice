@@ -33,4 +33,11 @@ export class CustomerService {
             .then(res => <Customer[]>res.data)
             .then(data => { return data; });
     }
+
+    getCustomersMedium() {
+        return this.http.get<any>('./../../assets/showcase/data/customers-medium.json')
+            .toPromise()
+            .then(res => <Customer[]>res.data)
+            .then(data => { return data; });
+    }
 }
