@@ -1,1 +1,27 @@
-<p>striped works!</p>
+<h1>Striped</h1>
+<p>幫 row 增加條紋效果，p-datatable-striped</p>
+
+<p-table
+    [value]="products"
+    styleClass="p-datatable-striped"
+>
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+        </tr>
+    </ng-template>
+    <ng-template
+        pTemplate="body"
+        let-product
+    >
+        <tr>
+            <td>{{product.code}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td>
+        </tr>
+    </ng-template>
+</p-table>
