@@ -270,11 +270,11 @@ export class AppComponent {
               },
               {
                 label: 'RowGroup 列的群組',
-                routerLink: '/data/table/rowGroup'
+                routerLink: '/data/table/row-group'
               },
               {
                 label: 'ContextMenu',
-                routerLink: '/data/table/contextMenu'
+                routerLink: '/data/table/context-menu'
               },
               {
                 label: 'Responsive 響應式',
