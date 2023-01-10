@@ -181,6 +181,127 @@ export class AppComponent {
             label: 'Pick-List 選取清單 (可拖曳)',
             routerLink: '/data/pick-list'
           },
+          {
+            label: 'Table 表格',
+            items:[
+              {
+                label: 'Documentation 文件',
+                routerLink: '/data/table/documentation'
+              },
+              {
+                label: 'Basic 基本',
+                routerLink: '/data/table/basic'
+              },
+              {
+                label: 'Dynamic 動態',
+                routerLink: '/data/table/dynamic'
+              },
+              {
+                label: 'Templating 樣板',
+                routerLink: '/data/table/templating'
+              },
+              {
+                label: 'Size 大小',
+                routerLink: '/data/table/size'
+              },
+              {
+                label: 'Gridlines 網格線(cell)',
+                routerLink: '/data/table/gridlines'
+              },
+              {
+                label: 'Striped 條紋',
+                routerLink: '/data/table/striped'
+              },
+              {
+                label: 'ColGroup 欄位群組',
+                routerLink: '/data/table/colGroup'
+              },
+              {
+                label: 'Page 分頁',
+                routerLink: '/data/table/page'
+              },
+              {
+                label: 'Sort 排序',
+                routerLink: '/data/table/sort'
+              },
+              {
+                label: 'Filter 過濾',
+                routerLink: '/data/table/filter'
+              },
+              {
+                label: 'Selection 選取',
+                routerLink: '/data/table/selection'
+              },
+              {
+                label: 'Lazy 延遲載入',
+                routerLink: '/data/table/lazy'
+              },
+              {
+                label: 'Scroll 滾軸',
+                routerLink: '/data/table/scroll'
+              },
+              {
+                label: 'VirtualScroll 虛擬滾軸',
+                routerLink: '/data/table/virtual-scroll'
+              },
+              {
+                label: 'FlexScroll',
+                routerLink: '/data/table/flex-scroll'
+              },
+              {
+                label: 'RowExpand 列的展開',
+                routerLink: '/data/table/row-expand'
+              },
+              {
+                label: 'Edit 可編輯',
+                routerLink: '/data/table/edit'
+              },
+              {
+                label: 'Toggle 欄位顯示切換',
+                routerLink: '/data/table/toggle'
+              },
+              {
+                label: 'Resize 調整',
+                routerLink: '/data/table/resize'
+              },
+              {
+                label: 'Reorder 重新排序',
+                routerLink: '/data/table/reorder'
+              },
+              {
+                label: 'RowGroup 列的群組',
+                routerLink: '/data/table/rowGroup'
+              },
+              {
+                label: 'ContextMenu',
+                routerLink: '/data/table/contextMenu'
+              },
+              {
+                label: 'Responsive 響應式',
+                routerLink: '/data/table/responsive'
+              },
+              {
+                label: 'Export 匯出',
+                routerLink: '/data/table/export'
+              },
+              {
+                label: 'State 狀態',
+                routerLink: '/data/table/state'
+              },
+              {
+                label: 'Style 樣式',
+                routerLink: '/data/table/style'
+              },
+              {
+                label: 'Sticky 貼上固定',
+                routerLink: '/data/table/sticky'
+              },
+              {
+                label: 'CRUD 新增/讀取/修改/刪除',
+                routerLink: '/data/table/crud'
+              }
+            ]
+          }
         ]
       },
       {

@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: 'org-chart', component: OrgChartComponent },
   { path: 'paginator', component: PaginatorComponent },
   { path: 'pick-list', component: PickListComponent },
+  { path: 'table', loadChildren: () => import('./table/table.module').then(m => m.TableModule) }
 ];
 
 @NgModule({
