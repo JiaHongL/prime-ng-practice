@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Customer, CustomerService } from 'src/app/services/customer.service';
 
 @Component({
   selector: 'app-sticky',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StickyComponent implements OnInit {
 
-  constructor() { }
+  customers!: Customer[];
 
-  ngOnInit(): void {
+  constructor(private customerService: CustomerService) { }
+
+  ngOnInit() {
+      this.customerService.getCustomersLarge().then(customers => this.customers = customers);
   }
-
 }
