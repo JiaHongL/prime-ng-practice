@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Customer, CustomerService } from 'src/app/services/customer.service';
 
 @Component({
   selector: 'app-state',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StateComponent implements OnInit {
 
-  constructor() { }
+  customers1!: Customer[];
 
-  ngOnInit(): void {
+  customers2!: Customer[];
+
+  selectedCustomer1!: Customer;
+
+  selectedCustomer2!: Customer;
+
+  constructor(private customerService: CustomerService) { }
+
+  ngOnInit() {
+      this.customerService.getCustomersMedium().then(data => this.customers1 = data);
+      this.customerService.getCustomersMedium().then(data => this.customers2 = data);
   }
 
 }
