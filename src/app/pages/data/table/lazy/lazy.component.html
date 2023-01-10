@@ -1,1 +1,32 @@
-<p>lazy works!</p>
+<h1>Lazy</h1>
+<p>當使用大量數據時，可以使用延遲顯示增加效能，可以使用在分頁、排序、過濾。</p>
+
+<p-table
+    [value]="customers"
+    [lazy]="true"
+    (onLazyLoad)="loadCustomers($event)"
+    [paginator]="true"
+    [rows]="10"
+    [totalRecords]="totalRecords"
+    [loading]="loading"
+>
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Company</th>
+            <th>Representative</th>
+        </tr>
+    </ng-template>
+    <ng-template
+        pTemplate="body"
+        let-customer
+    >
+        <tr>
+            <td>{{customer.name}}</td>
+            <td>{{customer.country.name}}</td>
+            <td>{{customer.company}}</td>
+            <td>{{customer.representative.name}}</td>
+        </tr>
+    </ng-template>
+</p-table>
