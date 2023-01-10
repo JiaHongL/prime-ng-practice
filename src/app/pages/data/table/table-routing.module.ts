@@ -1,8 +1,8 @@
+import { SelectionComponent } from './selection/selection.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { TemplatingComponent } from './templating/templating.component';
-import { SelectButtonComponent } from '../../forms/select-button/select-button.component';
 import { ToggleButtonComponent } from '../../forms/toggle-button/toggle-button.component';
 import { ColGroupComponent } from './col-group/col-group.component';
 import { ContextMenuComponent } from './context-menu/context-menu.component';
@@ -43,7 +43,7 @@ const routes: Routes = [
   { path: 'page', component: PageComponent },
   { path: 'sort', component: SortComponent },
   { path: 'filter', component: FilterComponent },
-  { path: 'selection', component: SelectButtonComponent },
+  { path: 'selection', component: SelectionComponent },
   { path: 'lazy', component: LazyComponent },
   { path: 'scroll', component: ScrollComponent },
   { path: 'virtual-scroll', component: VirtualScrollComponent },
