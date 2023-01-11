@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 export interface Car {
     id?: any;
@@ -43,7 +44,7 @@ export class CarService {
 
     getCarsSmall() {
         return this.http
-            .get<any>('assets/showcase/data/cars-small.json')
+            .get<any>(environment.serverFolderPath + 'assets/showcase/data/cars-small.json')
             .toPromise()
             .then((res) => <Car[]>res.data)
             .then((data) => {
@@ -53,7 +54,7 @@ export class CarService {
 
     getCarsMedium() {
         return this.http
-            .get<any>('assets/showcase/data/cars-medium.json')
+            .get<any>(environment.serverFolderPath + 'assets/showcase/data/cars-medium.json')
             .toPromise()
             .then((res) => <Car[]>res.data)
             .then((data) => {
@@ -63,7 +64,7 @@ export class CarService {
 
     getCarsLarge() {
         return this.http
-            .get<any>('assets/showcase/data/cars-large.json')
+            .get<any>(environment.serverFolderPath + 'assets/showcase/data/cars-large.json')
             .toPromise()
             .then((res) => <Car[]>res.data)
             .then((data) => {

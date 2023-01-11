@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import { TreeNode } from 'primeng/api';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
     providedIn:'root'
@@ -11,28 +12,28 @@ export class NodeService {
 
     getFiles() {
         return this.http
-            .get<any>('assets/showcase/data/files.json')
+            .get<any>(environment.serverFolderPath + 'assets/showcase/data/files.json')
             .toPromise()
             .then((res) => <TreeNode[]>res.data);
     }
 
     getLazyFiles() {
         return this.http
-            .get<any>('assets/showcase/data/files-lazy.json')
+            .get<any>(environment.serverFolderPath + 'assets/showcase/data/files-lazy.json')
             .toPromise()
             .then((res) => <TreeNode[]>res.data);
     }
 
     getFilesystem() {
         return this.http
-            .get<any>('assets/showcase/data/filesystem.json')
+            .get<any>(environment.serverFolderPath + 'assets/showcase/data/filesystem.json')
             .toPromise()
             .then((res) => <TreeNode[]>res.data);
     }
 
     getLazyFilesystem() {
         return this.http
-            .get<any>('assets/showcase/data/filesystem-lazy.json')
+            .get<any>(environment.serverFolderPath + 'assets/showcase/data/filesystem-lazy.json')
             .toPromise()
             .then((res) => <TreeNode[]>res.data);
     }

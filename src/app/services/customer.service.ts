@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 export interface Country {
     name?: string;
@@ -28,14 +29,14 @@ export class CustomerService {
     constructor(private http: HttpClient) { }
 
     getCustomersLarge() {
-        return this.http.get<any>('./../../assets/showcase/data/customers-large.json')
+        return this.http.get<any>(environment.serverFolderPath + './../../assets/showcase/data/customers-large.json')
             .toPromise()
             .then(res => <Customer[]>res.data)
             .then(data => { return data; });
     }
 
     getCustomersMedium() {
-        return this.http.get<any>('./../../assets/showcase/data/customers-medium.json')
+        return this.http.get<any>(environment.serverFolderPath + './../../assets/showcase/data/customers-medium.json')
             .toPromise()
             .then(res => <Customer[]>res.data)
             .then(data => { return data; });
