@@ -54,6 +54,7 @@ import { CardModule } from 'primeng/card';
 import { MegaMenuModule } from 'primeng/megamenu';
 import { TreeModule } from 'primeng/tree';
 import { TieredMenuModule } from 'primeng/tieredmenu';
+import { TreeTableModule } from 'primeng/treetable';
 
 @NgModule({
   exports: [
@@ -111,7 +112,8 @@ import { TieredMenuModule } from 'primeng/tieredmenu';
     CardModule,
     MegaMenuModule,
     TieredMenuModule,
-    TreeModule
+    TreeModule,
+    TreeTableModule
   ],
 })
 export class PrimeNgModule { }

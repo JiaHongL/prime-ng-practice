@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TreeNode } from 'primeng/api';
+import { NodeService } from 'src/app/services/node.service';
 
 @Component({
   selector: 'app-documentation',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocumentationComponent implements OnInit {
 
-  constructor() { }
+  files1!: TreeNode[];
 
-  ngOnInit(): void {
+  files2!: TreeNode[];
+
+  cols!: any[];
+
+  constructor(private nodeService: NodeService) { }
+
+  ngOnInit() {
+      this.nodeService.getFilesystem().then(files => this.files1 = files);
+      this.nodeService.getFilesystem().then(files => this.files2 = files);
+
+      this.cols = [
+          { field: 'name', header: 'Name' },
+          { field: 'size', header: 'Size' },
+          { field: 'type', header: 'Type' }
+      ];
   }
 
 }
