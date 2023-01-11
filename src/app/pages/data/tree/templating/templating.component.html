@@ -1,1 +1,23 @@
-<p>templating works!</p>
+<h1>Tree Templating</h1>
+<p>可定義資料的 type，pTemplate 再使用對應的 type 做樣板調整(default：未指定 type )</p>
+
+<p-tree [value]="nodes">
+    <ng-template
+        let-node
+        pTemplate="url"
+    >
+        <a [href]="node.data">{{node.label}}</a>
+    </ng-template>
+    <ng-template
+        let-node
+        pTemplate="url2"
+    >
+        <a [href]="node.data">{{node.label}}...! </a>
+    </ng-template>
+    <ng-template
+        let-node
+        pTemplate="default"
+    >
+        <b>{{node.label}}</b>
+    </ng-template>
+</p-tree>
