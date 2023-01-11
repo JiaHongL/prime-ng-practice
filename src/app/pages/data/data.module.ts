@@ -12,6 +12,7 @@ import { OrderListComponent } from './order-list/order-list.component';
 import { OrgChartComponent } from './org-chart/org-chart.component';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { PickListComponent } from './pick-list/pick-list.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PickListComponent } from './pick-list/pick-list.component';
     OrderListComponent,
     OrgChartComponent,
     PaginatorComponent,
-    PickListComponent
+    PickListComponent,
+    TimelineComponent
   ],
   imports: [
     CommonModule,

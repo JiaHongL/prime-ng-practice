@@ -8,6 +8,7 @@ import { OrderListComponent } from './order-list/order-list.component';
 import { OrgChartComponent } from './org-chart/org-chart.component';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { PickListComponent } from './pick-list/pick-list.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 const routes: Routes = [
   { path: 'data-view', component: DataViewComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'org-chart', component: OrgChartComponent },
   { path: 'paginator', component: PaginatorComponent },
   { path: 'pick-list', component: PickListComponent },
-  { path: 'table', loadChildren: () => import('./table/table.module').then(m => m.TableModule) }
+  { path: 'table', loadChildren: () => import('./table/table.module').then(m => m.TableModule) },
+  { path: 'time-line', component: TimelineComponent },
 ];
 
 @NgModule({

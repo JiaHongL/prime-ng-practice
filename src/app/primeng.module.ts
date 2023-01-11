@@ -49,6 +49,8 @@ import { ContextMenuModule } from 'primeng/contextmenu';
 import { ToolbarModule } from 'primeng/toolbar';
 import { FileUploadModule } from 'primeng/fileupload';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { TimelineModule } from 'primeng/timeline';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   exports: [
@@ -101,7 +103,9 @@ import { ConfirmDialogModule } from 'primeng/confirmdialog';
     ContextMenuModule,
     ToolbarModule,
     FileUploadModule,
-    ConfirmDialogModule
+    ConfirmDialogModule,
+    TimelineModule,
+    CardModule
   ],
 })
 export class PrimeNgModule { }

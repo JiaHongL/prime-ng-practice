@@ -301,6 +301,10 @@ export class AppComponent {
                 routerLink: '/data/table/crud'
               }
             ]
+          },
+          {
+            label: 'TimeLine 時間軸',
+            routerLink:'/data/time-line'
           }
         ]
       },
