@@ -5,12 +5,12 @@
     .layout-menu {
         flex: 0 0 auto;
         padding: 5px;
-        z-index: 10;
+        z-index: 2;
     }
 
     .layout-content {
         flex: 1 1 auto;
-        padding: 5px;
+        padding: 5px 0px 100px 0px;
         z-index: 1;
         overflow-y: auto;
     }
