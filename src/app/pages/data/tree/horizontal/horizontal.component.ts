@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TreeNode } from 'primeng/api';
+import { NodeService } from 'src/app/services/node.service';
 
 @Component({
   selector: 'app-horizontal',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HorizontalComponent implements OnInit {
 
-  constructor() { }
+  files!: TreeNode[];
 
-  ngOnInit(): void {
+  selectedFile!: TreeNode;
+  
+  constructor(private nodeService: NodeService) { }
+
+  ngOnInit() {
+      this.nodeService.getFiles().then(files => {
+          this.files = [{
+              label: 'Root',
+              children: files
+          }];
+      });
   }
 
 }
