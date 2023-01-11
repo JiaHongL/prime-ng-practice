@@ -1,1 +1,98 @@
-<p>virtual-scroller works!</p>
+<h1>VirtualScroller</h1>
+<p>可用來改善大量顯示的效能問題</p>
+
+<button pButton label="Reset" (click)="reset()"></button>
+
+<div class="card">
+    <h5>Lazy Loading</h5>
+    <p-virtualScroller
+        #vs
+        [value]="virtualProducts"
+        scrollHeight="450px"
+        [itemSize]="100"
+        [rows]="100"
+        [lazy]="true"
+        (onLazyLoad)="loadCarsLazy($event)"
+    >
+        <ng-template pTemplate="header">List of Products</ng-template>
+        <ng-template
+            let-product
+            pTemplate="item"
+            let-i="index"
+        >
+            <div class="product-item">
+                <div class="image-container">
+                    <img
+                        src="assets/showcase/images/demo/product/{{product.image}}"
+                        [alt]="product.name"
+                        class="product-image"
+                    >
+                </div>
+                <div class="product-list-detail">
+                    <h5 class="mb-2">{{product.name}}</h5>
+                    <i class="pi pi-tag product-category-icon"></i>
+                    <span class="product-category">{{product.category}}</span>
+                </div>
+                <div class="product-list-action">
+                    <h6 class="mb-2">${{product.price}}</h6>
+                    <span [class]="'product-badge status-' + product.inventoryStatus.toLowerCase()">{{product.inventoryStatus}}</span>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template
+            let-product
+            pTemplate="loadingItem"
+        >
+            <p-skeleton
+                height="90px"
+                [style]="{ 'margin-top': '10px' }"
+            ></p-skeleton>
+        </ng-template>
+    </p-virtualScroller>
+</div>
+
+<div class="card">
+    <h5>Prepopulated List</h5>
+    <p-virtualScroller
+        [value]="products"
+        scrollHeight="500px"
+        [itemSize]="100"
+    >
+        <ng-template pTemplate="header">
+            <div class="flex align-items-center justify-content-center">
+                List of Products
+                <p-dropdown
+                    [options]="sortOptions"
+                    [(ngModel)]="sortKey"
+                    placeholder="Sort By"
+                    (onChange)="onSortChange()"
+                    [style]="{'min-width':'10em'}"
+                ></p-dropdown>
+            </div>
+        </ng-template>
+        <ng-template
+            let-product
+            pTemplate="item"
+            let-i="index"
+        >
+            <div class="product-item">
+                <div class="image-container">
+                    <img
+                        src="assets/showcase/images/demo/product/{{product.image}}"
+                        [alt]="product.name"
+                        class="product-image"
+                    >
+                </div>
+                <div class="product-list-detail">
+                    <h5 class="mb-2">{{product.name}}</h5>
+                    <i class="pi pi-tag product-category-icon"></i>
+                    <span class="product-category">{{product.category}}</span>
+                </div>
+                <div class="product-list-action">
+                    <h6 class="mb-2">${{product.price}}</h6>
+                    <span [class]="'product-badge status-' + product.inventoryStatus.toLowerCase()">{{product.inventoryStatus}}</span>
+                </div>
+            </div>
+        </ng-template>
+    </p-virtualScroller>
+</div>

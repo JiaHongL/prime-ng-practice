@@ -55,6 +55,8 @@ import { MegaMenuModule } from 'primeng/megamenu';
 import { TreeModule } from 'primeng/tree';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { TreeTableModule } from 'primeng/treetable';
+import { VirtualScrollerModule } from 'primeng/virtualscroller';
+import { SkeletonModule } from 'primeng/skeleton'
 
 @NgModule({
   exports: [
@@ -113,7 +115,9 @@ import { TreeTableModule } from 'primeng/treetable';
     MegaMenuModule,
     TieredMenuModule,
     TreeModule,
-    TreeTableModule
+    TreeTableModule,
+    VirtualScrollerModule,
+    SkeletonModule
   ],
 })
 export class PrimeNgModule { }
