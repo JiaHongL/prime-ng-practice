@@ -1,1 +1,57 @@
-<p>scroll works!</p>
+<h1>Tree Scroll</h1>
+<p>Regular Scroll : 一般使用，可以自己定義一個滾軸高度。</p>
+<p>Flexible Viewport : 隨著可視的視窗大小自動調整</p>
+<p>Virtual Scroll : 用於大量的資料延遲載入使用，可增加效能</p>
+
+<h5>Regular Scroll</h5>
+<p-tree
+    [value]="files1"
+    scrollHeight="200px"
+></p-tree>
+
+<h5>Flexible Viewport</h5>
+<p>
+    Flex scroll feature makes the scrollable viewport section dynamic so that it can grow or shrink relative to the parent size of the tree. Click the button below
+    to display a resizable and maximizable Dialog where data viewport adjusts itself according to the size changes.
+</p>
+
+<button
+    type="button"
+    (click)="showDialog()"
+    pButton
+    icon="pi pi-external-link"
+    label="View"
+></button>
+<p-dialog
+    header="Flexible ScrollHeight"
+    [(visible)]="dialogVisible"
+    [style]="{width: '50vw'}"
+    [baseZIndex]="10000"
+    [maximizable]="true"
+    [modal]="true"
+    [resizable]="true"
+    [contentStyle]="{height: '300px'}"
+    styleClass="p-fluid"
+>
+    <p-tree
+        [value]="files2"
+        scrollHeight="flex"
+    ></p-tree>
+    <ng-template pTemplate="footer">
+        <button
+            type="button"
+            pButton
+            icon="pi pi-check"
+            (click)="dialogVisible=false"
+            label="Ok"
+            class="p-button-text"
+        ></button>
+    </ng-template>
+</p-dialog>
+
+<h5>Virtual Scroll</h5>
+<p-tree
+    [value]="files3"
+    [virtualScroll]="true"
+    scrollHeight="200px"
+></p-tree>
