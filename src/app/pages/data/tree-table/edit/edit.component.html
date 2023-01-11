@@ -1,1 +1,25 @@
-<p>edit works!</p>
+<h1>Edit</h1>
+<p>使用 treeTableCellEditor 切換編輯或顯示，pTemplate= input or output</p>
+
+<p-treeTable [value]="files" [columns]="cols">
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+            <th *ngFor="let col of columns">
+                {{col.header}}
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowNode let-rowData="rowData" let-columns="columns">
+        <tr>
+            <td *ngFor="let col of columns; let i = index" ttEditableColumn [ngClass]="{'p-toggler-column': i === 0}">
+                <p-treeTableToggler [rowNode]="rowNode" *ngIf="i === 0"></p-treeTableToggler>
+                <p-treeTableCellEditor>
+                    <ng-template pTemplate="input">
+                        <input pInputText type="text" [(ngModel)]="rowData[col.field]">
+                    </ng-template>
+                    <ng-template pTemplate="output">{{rowData[col.field]}}</ng-template>
+                </p-treeTableCellEditor>
+            </td>
+        </tr>            
+    </ng-template>
+</p-treeTable>
