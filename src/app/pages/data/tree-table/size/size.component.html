@@ -1,1 +1,122 @@
-<p>size works!</p>
+<h1>Size</h1>
+<p>.p-treetable-sm、.p-treetable-lg</p>
+
+
+<div class="card">
+    <p-treeTable
+        [value]="files1"
+        [columns]="cols"
+        [reorderableColumns]="true"
+        styleClass="p-treetable-sm"
+    >
+        <ng-template pTemplate="caption">Small Table</ng-template>
+        <ng-template
+            pTemplate="header"
+            let-columns
+        >
+            <tr>
+                <th
+                    *ngFor="let col of columns"
+                    ttReorderableColumn
+                >
+                    {{col.header}}
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template
+            pTemplate="body"
+            let-rowNode
+            let-rowData="rowData"
+            let-columns="columns"
+        >
+            <tr>
+                <td *ngFor="let col of columns; let i = index">
+                    <p-treeTableToggler
+                        [rowNode]="rowNode"
+                        *ngIf="i == 0"
+                    ></p-treeTableToggler>
+                    {{rowData[col.field]}}
+                </td>
+            </tr>
+        </ng-template>
+    </p-treeTable>
+</div>
+
+<div class="card">
+    <p-treeTable
+        [value]="files2"
+        [columns]="cols"
+        [reorderableColumns]="true"
+    >
+        <ng-template pTemplate="caption">Normal Table</ng-template>
+        <ng-template
+            pTemplate="header"
+            let-columns
+        >
+            <tr>
+                <th
+                    *ngFor="let col of columns"
+                    ttReorderableColumn
+                >
+                    {{col.header}}
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template
+            pTemplate="body"
+            let-rowNode
+            let-rowData="rowData"
+            let-columns="columns"
+        >
+            <tr>
+                <td *ngFor="let col of columns; let i = index">
+                    <p-treeTableToggler
+                        [rowNode]="rowNode"
+                        *ngIf="i == 0"
+                    ></p-treeTableToggler>
+                    {{rowData[col.field]}}
+                </td>
+            </tr>
+        </ng-template>
+    </p-treeTable>
+</div>
+
+<div class="card">
+    <p-treeTable
+        [value]="files3"
+        [columns]="cols"
+        [reorderableColumns]="true"
+        styleClass="p-treetable-lg"
+    >
+        <ng-template pTemplate="caption">Large Table</ng-template>
+        <ng-template
+            pTemplate="header"
+            let-columns
+        >
+            <tr>
+                <th
+                    *ngFor="let col of columns"
+                    ttReorderableColumn
+                >
+                    {{col.header}}
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template
+            pTemplate="body"
+            let-rowNode
+            let-rowData="rowData"
+            let-columns="columns"
+        >
+            <tr>
+                <td *ngFor="let col of columns; let i = index">
+                    <p-treeTableToggler
+                        [rowNode]="rowNode"
+                        *ngIf="i == 0"
+                    ></p-treeTableToggler>
+                    {{rowData[col.field]}}
+                </td>
+            </tr>
+        </ng-template>
+    </p-treeTable>
+</div>
