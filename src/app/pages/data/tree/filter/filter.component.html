@@ -1,1 +1,21 @@
-<p>filter works!</p>
+<H1> Filter 過濾</H1>
+
+<p>
+    Lenient Filter : 找到後就會停下來，不會再繼續往子節點找。
+</p>
+<p>
+    Strict Filter Mode : 就算父節點找到，還是會一直往下找，直到找不到。
+</p>
+
+<h3>Lenient Filter Mode</h3>
+<p-tree
+    [value]="files1"
+    [filter]="true"
+></p-tree>
+
+<h3>Strict Filter Mode</h3>
+<p-tree
+    [value]="files2"
+    [filter]="true"
+    filterMode="strict"
+></p-tree>

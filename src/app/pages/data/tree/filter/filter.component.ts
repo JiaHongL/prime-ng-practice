@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TreeNode } from 'primeng/api';
+import { NodeService } from 'src/app/services/node.service';
 
 @Component({
   selector: 'app-filter',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilterComponent implements OnInit {
 
-  constructor() { }
+  files1!: TreeNode[];
 
-  ngOnInit(): void {
+  files2!: TreeNode[];
+  
+  constructor(private nodeService: NodeService) { }
+
+  ngOnInit() {
+      this.nodeService.getFiles().then(files => this.files1 = files);
+      this.nodeService.getFiles().then(files => this.files2 = files);
   }
 
 }
