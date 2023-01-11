@@ -20,6 +20,8 @@ import { ContextMenuComponent } from './context-menu/context-menu.component';
 import { ResponsiveComponent } from './responsive/responsive.component';
 import { FilterComponent } from './filter/filter.component';
 import { SizeComponent } from './size/size.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PrimeNgModule } from 'src/app/primeng.module';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,10 @@ import { SizeComponent } from './size/size.component';
   ],
   imports: [
     CommonModule,
-    TreeTableRoutingModule
+    TreeTableRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    PrimeNgModule
   ]
 })
 export class TreeTableModule { }

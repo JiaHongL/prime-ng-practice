@@ -12,6 +12,8 @@ import { ScrollComponent } from './scroll/scroll.component';
 import { ContextMenuComponent } from './context-menu/context-menu.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { HorizontalComponent } from './horizontal/horizontal.component';
+import { PrimeNgModule } from 'src/app/primeng.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,7 +30,10 @@ import { HorizontalComponent } from './horizontal/horizontal.component';
   ],
   imports: [
     CommonModule,
-    TreeRoutingModule
+    TreeRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    PrimeNgModule
   ]
 })
 export class TreeModule { }

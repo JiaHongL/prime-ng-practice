@@ -52,6 +52,7 @@ import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { TimelineModule } from 'primeng/timeline';
 import { CardModule } from 'primeng/card';
 import { MegaMenuModule } from 'primeng/megamenu';
+import { TreeModule } from 'primeng/tree';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 
 @NgModule({
@@ -109,7 +110,8 @@ import { TieredMenuModule } from 'primeng/tieredmenu';
     TimelineModule,
     CardModule,
     MegaMenuModule,
-    TieredMenuModule
+    TieredMenuModule,
+    TreeModule
   ],
 })
 export class PrimeNgModule { }
