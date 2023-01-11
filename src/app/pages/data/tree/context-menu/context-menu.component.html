@@ -1,1 +1,32 @@
-<p>context-menu works!</p>
+<h1> ContextMenu 右鍵選單 </h1>
+<p> 可以自己直接使用 [contextMenu]="contextMenuRef"</p>
+<p> 也可以使用 Templating 搭配 contextMenu target 自己客製</p>
+
+<div class="p-mb-1">
+    <p-tree [value]="files" selectionMode="single" [(selection)]="selectedFile" [contextMenu]="cm"></p-tree>
+    <p-contextMenu #cm [model]="items"></p-contextMenu>
+    <p-toast></p-toast>
+</div>
+
+<div>
+    <p-tree [value]="files2" selectionMode="single" [(selection)]="selectedFile">
+        <ng-template
+            let-node
+            pTemplate="default"
+        >
+            <span #root>{{node.label}}</span>
+            <p-contextMenu [target]="root" [model]="items"></p-contextMenu>
+        </ng-template>
+            <ng-template
+            let-node
+            pTemplate="sub"
+        >
+            <span #sub>{{node.label}}</span>
+            <p-contextMenu [target]="sub" [model]="items2"></p-contextMenu>
+        </ng-template>
+    </p-tree>
+</div>
+
+
+
+
