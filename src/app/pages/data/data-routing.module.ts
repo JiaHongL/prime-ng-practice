@@ -1,3 +1,4 @@
+import { VirtualScrollerComponent } from './virtual-scroller/virtual-scroller.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -20,6 +21,9 @@ const routes: Routes = [
   { path: 'pick-list', component: PickListComponent },
   { path: 'table', loadChildren: () => import('./table/table.module').then(m => m.TableModule) },
   { path: 'time-line', component: TimelineComponent },
+  { path: 'tree', loadChildren: () => import('./tree/tree.module').then(m => m.TreeModule) },
+  { path: 'tree-table', loadChildren: () => import('./tree-table/tree-table.module').then(m => m.TreeTableModule) },
+  { path: 'virtual-scroller', component: VirtualScrollerComponent },
 ];
 
 @NgModule({

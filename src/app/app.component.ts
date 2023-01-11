@@ -136,18 +136,18 @@ export class AppComponent {
       {
         label: 'Button 按鈕',
         items: [
-          {
-            label: 'Button 按鈕',
-            routerLink: '/button/button'
-          },
-          {
-            label: 'SplitButton 分割按鈕(下拉式按鈕)',
-            routerLink: '/button/split-button'
-          },
-          {
-            label: 'Speed-Dial 快速點擊按鈕',
-            routerLink: '/button/speed-dial'
-          }
+            {
+              label: 'Button 按鈕',
+              routerLink: '/button/button'
+            },
+            {
+              label: 'SplitButton 分割按鈕(下拉式按鈕)',
+              routerLink: '/button/split-button'
+            },
+            {
+              label: 'Speed-Dial 快速點擊按鈕',
+              routerLink: '/button/speed-dial'
+            }
         ]
       },
       {
@@ -183,7 +183,7 @@ export class AppComponent {
           },
           {
             label: 'Table 表格',
-            items:[
+            items: [
               {
                 label: 'Documentation 文件',
                 routerLink: '/data/table/documentation'
@@ -304,8 +304,126 @@ export class AppComponent {
           },
           {
             label: 'TimeLine 時間軸',
-            routerLink:'/data/time-line'
-          }
+            routerLink: '/data/time-line'
+          },
+          {
+            label: 'Tree 樹狀',
+            items: [
+              {
+                label: 'Documentation 文件',
+                routerLink: '/data/tree/documentation'
+              },
+              {
+                label: 'Templating 樣板化',
+                routerLink: '/data/tree/templating'
+              },
+              {
+                label: 'Selection 選取',
+                routerLink: '/data/tree/selection'
+              },
+              {
+                label: 'Filter 過濾',
+                routerLink: '/data/tree/filter'
+              },
+              {
+                label: 'Lazy 延遲',
+                routerLink: '/data/tree/lazy'
+              },
+              {
+                label: 'Scroll 滾軸',
+                routerLink: '/data/tree/scroll'
+              },
+              {
+                label: 'ContextMenu 右鍵選單',
+                routerLink: '/data/tree/context-menu'
+              },
+              {
+                label: 'DragDrop 拖放',
+                routerLink: '/data/tree/drag-drop'
+              },
+              {
+                label: 'Horizontal 水平',
+                routerLink: '/data/tree/horizontal'
+              }
+            ]
+          },
+          {
+            label: 'Tree-Table 樹狀表單',
+            items: [
+              {
+                label: 'Documentation 文件',
+                routerLink: '/data/tree-table/documentation'
+              },
+              {
+                label: 'templating 樣板化',
+                routerLink: '/data/tree-table/templating'
+              },
+              {
+                label: 'Page 分頁',
+                routerLink: '/data/tree-table/page'
+              },
+              {
+                label: 'Sort 排序',
+                routerLink: '/data/tree-table/sort'
+              },
+              {
+                label: 'Selection 選取',
+                routerLink: '/data/tree-table/selection'
+              },
+              {
+                label: 'ColGroup 欄位群組',
+                routerLink: '/data/tree-table/col-group'
+              },
+              {
+                label: 'Lazy 延遲',
+                routerLink: '/data/tree-table/lazy'
+              },
+              {
+                label: 'Edit 編輯',
+                routerLink: '/data/tree-table/edit'
+              },
+              {
+                label: 'Scroll 滾軸',
+                routerLink: '/data/tree-table/scroll'
+              },
+              {
+                label: 'Resize 調整大小',
+                routerLink: '/data/tree-table/resize'
+              },
+              {
+                label: 'Reorder 重新排序',
+                routerLink: '/data/tree-table/reorder'
+              },
+              {
+                label: 'Toggle 切換',
+                routerLink: '/data/tree-table/toggle'
+              },
+              {
+                label: 'Style 樣式',
+                routerLink: '/data/tree-table/style'
+              },
+              {
+                label: 'ContextMenu 右鍵選單',
+                routerLink: '/data/tree-table/context-menu'
+              },
+              {
+                label: 'Responsive 響應式',
+                routerLink: '/data/tree-table/responsive'
+              },
+              {
+                label: 'Filter 過濾',
+                routerLink: '/data/tree-table/filter'
+              },
+              {
+                label: 'Size 大小',
+                routerLink: '/data/tree-table/size'
+              }
+            ]
+          },
+          {
+            label: 'VirtualScroll 虛擬滾軸',
+            routerLink: '/data/virtual-scroller'
+          },
         ]
       },
       {
@@ -351,20 +469,6 @@ export class AppComponent {
       {
         label: 'Utilities 實用類',
         routerLink: ''
-      },
-      {
-        label: 'File',
-        items: [{
-          label: 'New',
-          icon: 'pi pi-fw pi-plus',
-          items: [
-            { label: 'Project' },
-            { label: 'Other' },
-          ]
-        },
-        { label: 'Open' },
-        { label: 'Quit' }
-        ]
       }
     ];
   }

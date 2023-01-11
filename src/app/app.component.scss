@@ -1,10 +1,27 @@
-.wrapper {
-    padding: 10px;
+.layout-wrapper {
+    display: flex;
+    height: 100%;
+
+    .layout-menu {
+        flex: 0 0 auto;
+        padding: 5px;
+        z-index: 10;
+    }
+
+    .layout-content {
+        flex: 1 1 auto;
+        padding: 5px;
+        z-index: 1;
+        overflow-y: auto;
+    }
 }
+
 
 ::ng-deep .p-submenu-list {
     width: auto !important;
+    z-index: 9999;
     .p-menuitem {
+        z-index: 9999;
         .p-menuitem-text {
             width: auto;
             white-space: nowrap;

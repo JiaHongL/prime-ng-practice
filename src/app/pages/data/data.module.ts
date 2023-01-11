@@ -13,6 +13,7 @@ import { OrgChartComponent } from './org-chart/org-chart.component';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { PickListComponent } from './pick-list/pick-list.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { VirtualScrollerComponent } from './virtual-scroller/virtual-scroller.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TimelineComponent } from './timeline/timeline.component';
     OrgChartComponent,
     PaginatorComponent,
     PickListComponent,
-    TimelineComponent
+    TimelineComponent,
+    VirtualScrollerComponent
   ],
   imports: [
     CommonModule,

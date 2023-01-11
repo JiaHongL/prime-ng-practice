@@ -51,6 +51,8 @@ import { FileUploadModule } from 'primeng/fileupload';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { TimelineModule } from 'primeng/timeline';
 import { CardModule } from 'primeng/card';
+import { MegaMenuModule } from 'primeng/megamenu';
+import { TieredMenuModule } from 'primeng/tieredmenu';
 
 @NgModule({
   exports: [
@@ -105,7 +107,9 @@ import { CardModule } from 'primeng/card';
     FileUploadModule,
     ConfirmDialogModule,
     TimelineModule,
-    CardModule
+    CardModule,
+    MegaMenuModule,
+    TieredMenuModule
   ],
 })
 export class PrimeNgModule { }
