@@ -1,1 +1,6 @@
-<p>lazy works!</p>
+<h1>Lazy 延遲</h1>
+<p>loading=true，將會顯示一個遮罩，然後等回覆資料後再顯示。</p>
+
+<p-tree [value]="files" (onNodeExpand)="nodeExpand($event)" [loading]="loading"></p-tree>
+
+<p-toast></p-toast>
