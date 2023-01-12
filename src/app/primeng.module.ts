@@ -58,6 +58,7 @@ import { TreeTableModule } from 'primeng/treetable';
 import { VirtualScrollerModule } from 'primeng/virtualscroller';
 import { SkeletonModule } from 'primeng/skeleton';
 import { AccordionModule } from 'primeng/accordion';
+import { FieldsetModule } from 'primeng/fieldset';
 
 @NgModule({
   exports: [
@@ -119,7 +120,8 @@ import { AccordionModule } from 'primeng/accordion';
     TreeTableModule,
     VirtualScrollerModule,
     SkeletonModule,
-    AccordionModule
+    AccordionModule,
+    FieldsetModule
   ],
 })
 export class PrimeNgModule { }
