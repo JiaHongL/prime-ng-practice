@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'button', loadChildren: () => import('./pages/button/button.module').then(m => m.ButtonModule) },
   { path: 'data', loadChildren: () => import('./pages/data/data.module').then(m => m.DataModule) },
   { path: 'panel', loadChildren: () => import('./pages/panel/panel.module').then(m => m.PanelModule) },
+  { path: 'overly', loadChildren: () => import('./pages/overly/overly.module').then(m => m.OverlyModule) },
 ]
 
 @NgModule({

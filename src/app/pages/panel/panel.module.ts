@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { PrimeNgModule } from 'src/app/primeng.module';
 
 import { PanelRoutingModule } from './panel-routing.module';
 import { AccordionComponent } from './accordion/accordion.component';
@@ -12,24 +15,24 @@ import { ScrollPanelComponent } from './scroll-panel/scroll-panel.component';
 import { TabViewComponent } from './tab-view/tab-view.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 
-
 @NgModule({
   declarations: [
-
-  
     AccordionComponent,
-        CardComponent,
-        DividerComponent,
-        FieldsetComponent,
-        PanelComponent,
-        SplitterComponent,
-        ScrollPanelComponent,
-        TabViewComponent,
-        ToolbarComponent
+    CardComponent,
+    DividerComponent,
+    FieldsetComponent,
+    PanelComponent,
+    SplitterComponent,
+    ScrollPanelComponent,
+    TabViewComponent,
+    ToolbarComponent
   ],
   imports: [
     CommonModule,
-    PanelRoutingModule
+    PanelRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    PrimeNgModule
   ]
 })
 export class PanelModule { }

@@ -6,6 +6,7 @@ import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrimeNgModule } from './primeng.module';
+import { OverlyModule } from './pages/overly/overly.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PrimeNgModule } from './primeng.module';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    PrimeNgModule
+    PrimeNgModule,
+    OverlyModule
   ],
   providers: [],
   bootstrap: [AppComponent]

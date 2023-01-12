@@ -468,8 +468,37 @@ export class AppComponent {
         ]
       },
       {
-        label: 'Overlay 遮罩',
-        routerLink: ''
+        label: 'Overlay 覆蓋',
+        items: [
+          {
+            label: '確認視窗',
+            routerLink: 'confirm-dialog'
+          },
+          {
+            label: '確認視窗(相對於某個 target)',
+            routerLink: 'confirm-popup'
+          },
+          {
+            label: '視窗',
+            routerLink: 'dialog'
+          },
+          {
+            label: '動態視窗',
+            routerLink: 'dynamic-dialog'
+          },
+          {
+            label: '覆蓋面板',
+            routerLink: 'overlay-panel'
+          },
+          {
+            label: '側欄',
+            routerLink: 'sidebar'
+          },
+          {
+            label: '工具提示',
+            routerLink: 'tooltip'
+          }
+        ]
       },
       {
         label: 'File 檔案',
