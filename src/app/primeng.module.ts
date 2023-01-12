@@ -129,7 +129,7 @@ import { TabViewModule } from 'primeng/tabview';
     PanelModule,
     SplitterModule,
     ScrollPanelModule,
-    TabViewModule
+    TabViewModule,
   ],
 })
 export class PrimeNgModule { }
