@@ -1,1 +1,23 @@
-<p>tooltip works!</p>
+<p>Tooltip</p>
+
+<h5>Positions</h5>
+<div class="p-grid p-fluid">
+    <div class="col-12 p-md-3">
+        <input type="text" pInputText pTooltip="Enter your username" placeholder="Right">
+    </div>
+    <div class="col-12 p-md-3">
+        <input type="text" pInputText pTooltip="Enter your username" tooltipPosition="top" placeholder="Top">
+    </div>
+    <div class="col-12 p-md-3">
+        <input type="text" pInputText pTooltip="Enter your username" tooltipPosition="bottom" placeholder="Bottom">
+    </div>
+    <div class="col-12 p-md-3">
+        <input type="text" pInputText pTooltip="Enter your username" tooltipPosition="left" placeholder="Left">
+    </div>
+</div>
+
+<h5>Focus and Blur</h5>
+<input type="text" pInputText pTooltip="Enter your username" placeholder="Right" tooltipEvent="focus">
+
+<h5>Button</h5>
+<button pButton type="button" label="Save" icon="pi pi-check" pTooltip="Click to proceed"></button>
