@@ -472,31 +472,31 @@ export class AppComponent {
         items: [
           {
             label: '確認視窗',
-            routerLink: 'confirm-dialog'
+            routerLink: '/overly/confirm-dialog'
           },
           {
             label: '確認視窗(相對於某個 target)',
-            routerLink: 'confirm-popup'
+            routerLink: '/overly/confirm-popup'
           },
           {
             label: '視窗',
-            routerLink: 'dialog'
+            routerLink: '/overly/dialog'
           },
           {
             label: '動態視窗',
-            routerLink: 'dynamic-dialog'
+            routerLink: '/overly/dynamic-dialog'
           },
           {
             label: '覆蓋面板',
-            routerLink: 'overlay-panel'
+            routerLink: '/overly/overlay-panel'
           },
           {
             label: '側欄',
-            routerLink: 'sidebar'
+            routerLink: '/overly/sidebar'
           },
           {
             label: '工具提示',
-            routerLink: 'tooltip'
+            routerLink: '/overly/tooltip'
           }
         ]
       },
