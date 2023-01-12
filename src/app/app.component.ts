@@ -136,18 +136,18 @@ export class AppComponent {
       {
         label: 'Button 按鈕',
         items: [
-            {
-              label: 'Button 按鈕',
-              routerLink: '/button/button'
-            },
-            {
-              label: 'SplitButton 分割按鈕(下拉式按鈕)',
-              routerLink: '/button/split-button'
-            },
-            {
-              label: 'Speed-Dial 快速點擊按鈕',
-              routerLink: '/button/speed-dial'
-            }
+          {
+            label: 'Button 按鈕',
+            routerLink: '/button/button'
+          },
+          {
+            label: 'SplitButton 分割按鈕(下拉式按鈕)',
+            routerLink: '/button/split-button'
+          },
+          {
+            label: 'Speed-Dial 快速點擊按鈕',
+            routerLink: '/button/speed-dial'
+          }
         ]
       },
       {
@@ -428,7 +428,44 @@ export class AppComponent {
       },
       {
         label: 'Panel 面板',
-        routerLink: ''
+        items: [
+          {
+            label: 'Accordion 手風琴',
+            routerLink: '/panel/accordion'
+          },
+          {
+            label: 'Card 卡片',
+            routerLink: '/panel/card'
+          },
+          {
+            label: 'Divider 分割符號',
+            routerLink: '/panel/divider'
+          },
+          {
+            label: 'Fieldset 欄位分組器',
+            routerLink: '/panel/fieldset'
+          },
+          {
+            label: 'Panel 面板',
+            routerLink: '/panel/panel'
+          },
+          {
+            label: 'Splitter 分配器',
+            routerLink: '/panel/splitter'
+          },
+          {
+            label: 'ScrollPanel 滾動面板',
+            routerLink: '/panel/scroll-panel'
+          },
+          {
+            label: 'TabView 索引標籤檢視',
+            routerLink: '/panel/tab-view'
+          },
+          {
+            label: 'Toolbar 工具欄',
+            routerLink: '/panel/toolbar'
+          }
+        ]
       },
       {
         label: 'Overlay 遮罩',

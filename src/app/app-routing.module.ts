@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: 'form', loadChildren: () => import('./pages/forms/form.module').then(m => m.FormModule) },
   { path: 'button', loadChildren: () => import('./pages/button/button.module').then(m => m.ButtonModule) },
   { path: 'data', loadChildren: () => import('./pages/data/data.module').then(m => m.DataModule) },
+  { path: 'panel', loadChildren: () => import('./pages/panel/panel.module').then(m => m.PanelModule) },
 ]
 
 @NgModule({
