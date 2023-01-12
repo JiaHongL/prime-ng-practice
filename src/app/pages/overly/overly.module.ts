@@ -12,6 +12,7 @@ import { DynamicDialogComponent } from './dynamic-dialog/dynamic-dialog.componen
 import { OverlayPanelComponent } from './overlay-panel/overlay-panel.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
+import { ProductListDemo } from './dynamic-dialog/product-list-dialog';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TooltipComponent } from './tooltip/tooltip.component';
     DynamicDialogComponent,
     OverlayPanelComponent,
     SidebarComponent,
-    TooltipComponent
+    TooltipComponent,
+    ProductListDemo
   ],
   imports: [
     CommonModule,

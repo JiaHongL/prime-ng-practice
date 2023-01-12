@@ -64,6 +64,7 @@ import { SplitterModule } from 'primeng/splitter';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { TabViewModule } from 'primeng/tabview';
 import { ConfirmPopupModule } from 'primeng/confirmpopup';
+import { DynamicDialogModule } from 'primeng/dynamicdialog';
 
 @NgModule({
   exports: [
@@ -131,7 +132,8 @@ import { ConfirmPopupModule } from 'primeng/confirmpopup';
     SplitterModule,
     ScrollPanelModule,
     TabViewModule,
-    ConfirmPopupModule
+    ConfirmPopupModule,
+    DynamicDialogModule
   ],
 })
 export class PrimeNgModule { }
