@@ -61,6 +61,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { FieldsetModule } from 'primeng/fieldset';
 import { PanelModule } from 'primeng/panel';
 import { SplitterModule } from 'primeng/splitter';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
 
 @NgModule({
   exports: [
@@ -125,7 +126,8 @@ import { SplitterModule } from 'primeng/splitter';
     AccordionModule,
     FieldsetModule,
     PanelModule,
-    SplitterModule
+    SplitterModule,
+    ScrollPanelModule
   ],
 })
 export class PrimeNgModule { }
