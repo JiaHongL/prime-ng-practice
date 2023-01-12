@@ -438,7 +438,7 @@ export class AppComponent {
             routerLink: '/panel/card'
           },
           {
-            label: 'Divider 分割符號',
+            label: 'Divider 分割器',
             routerLink: '/panel/divider'
           },
           {
