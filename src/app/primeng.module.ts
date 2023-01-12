@@ -62,6 +62,7 @@ import { FieldsetModule } from 'primeng/fieldset';
 import { PanelModule } from 'primeng/panel';
 import { SplitterModule } from 'primeng/splitter';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { TabViewModule } from 'primeng/tabview';
 
 @NgModule({
   exports: [
@@ -127,7 +128,8 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
     FieldsetModule,
     PanelModule,
     SplitterModule,
-    ScrollPanelModule
+    ScrollPanelModule,
+    TabViewModule
   ],
 })
 export class PrimeNgModule { }
