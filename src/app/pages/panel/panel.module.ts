@@ -14,6 +14,7 @@ import { SplitterComponent } from './splitter/splitter.component';
 import { ScrollPanelComponent } from './scroll-panel/scroll-panel.component';
 import { TabViewComponent } from './tab-view/tab-view.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { SplitterModule } from 'primeng/splitter';
 
 @NgModule({
   declarations: [

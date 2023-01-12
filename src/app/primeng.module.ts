@@ -60,6 +60,7 @@ import { SkeletonModule } from 'primeng/skeleton';
 import { AccordionModule } from 'primeng/accordion';
 import { FieldsetModule } from 'primeng/fieldset';
 import { PanelModule } from 'primeng/panel';
+import { SplitterModule } from 'primeng/splitter';
 
 @NgModule({
   exports: [
@@ -123,7 +124,8 @@ import { PanelModule } from 'primeng/panel';
     SkeletonModule,
     AccordionModule,
     FieldsetModule,
-    PanelModule
+    PanelModule,
+    SplitterModule
   ],
 })
 export class PrimeNgModule { }

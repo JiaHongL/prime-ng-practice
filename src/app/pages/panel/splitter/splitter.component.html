@@ -1,1 +1,85 @@
-<p>splitter works!</p>
+<h1>Splitter</h1>
+<p>可以用來分割區塊，也可以巢狀使用，另外也有提供記憶功能。</p>
+
+<div class="card">
+    <h5>Horizontal</h5>
+    <p-splitter
+        [style]="{'height': '300px'}"
+        styleClass="mb-5"
+    >
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">Panel 1</div>
+        </ng-template>
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">Panel 2</div>
+        </ng-template>
+    </p-splitter>
+</div>
+
+<div class="card">
+    <h5>Vertical</h5>
+    <p-splitter
+        [style]="{'height': '300px'}"
+        styleClass="mb-5"
+        layout="vertical"
+    >
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">Panel 1</div>
+        </ng-template>
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">Panel 2</div>
+        </ng-template>
+    </p-splitter>
+</div>
+
+<div class="card">
+    <h5>Nested</h5>
+    <p-splitter
+        [style]="{'height': '300px'}"
+        [panelSizes]="[20,80]"
+        [minSizes]="[10,0]"
+        styleClass="mb-5"
+    >
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">Panel 1</div>
+        </ng-template>
+        <ng-template pTemplate>
+            <p-splitter
+                layout="vertical"
+                [panelSizes]="[15,85]"
+            >
+                <ng-template pTemplate>
+                    <div
+                        style="flex-grow: 1;"
+                        class="flex align-items-center justify-content-center"
+                    >
+                        Panel 2
+                    </div>
+                </ng-template>
+                <ng-template pTemplate>
+                    <p-splitter [panelSizes]="[20,80]">
+                        <ng-template pTemplate>
+                            <div class="col flex align-items-center justify-content-center">Panel 3</div>
+                        </ng-template>
+                        <ng-template pTemplate>
+                            <div class="col flex align-items-center justify-content-center">Panel 4</div>
+                        </ng-template>
+                    </p-splitter>
+                </ng-template>
+            </p-splitter>
+        </ng-template>
+    </p-splitter>
+</div>
+
+<h5>Stateful</h5>
+
+<div class="card">
+    <p-splitter stateKey="mykey" stateStorage="local">
+        <ng-template pTemplate>
+            Panel 1
+        </ng-template>
+        <ng-template pTemplate>
+            Panel 2
+        </ng-template>
+    </p-splitter>
+</div>
