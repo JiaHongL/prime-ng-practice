@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  visibleSidebar1 = false;
+
+  visibleSidebar2 = false;
+
+  visibleSidebar3 = false;
+
+  visibleSidebar4 = false;
+
+  visibleSidebar5 = false;
+
   constructor() { }
 
   ngOnInit(): void {

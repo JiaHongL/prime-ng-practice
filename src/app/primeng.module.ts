@@ -66,6 +66,7 @@ import { TabViewModule } from 'primeng/tabview';
 import { ConfirmPopupModule } from 'primeng/confirmpopup';
 import { DynamicDialogModule } from 'primeng/dynamicdialog';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
+import { SidebarModule } from 'primeng/sidebar';
 
 @NgModule({
   exports: [
@@ -135,7 +136,8 @@ import { OverlayPanelModule } from 'primeng/overlaypanel';
     TabViewModule,
     ConfirmPopupModule,
     DynamicDialogModule,
-    OverlayPanelModule
+    OverlayPanelModule,
+    SidebarModule
   ],
 })
 export class PrimeNgModule { }
