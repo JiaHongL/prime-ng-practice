@@ -73,7 +73,8 @@ import { TerminalModule } from 'primeng/terminal';
 import { GalleriaModule } from 'primeng/galleria';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { SlideMenuModule } from 'primeng/slidemenu';
-import { StepsModule } from 'primeng/steps'
+import { StepsModule } from 'primeng/steps';
+import { TabMenuModule } from 'primeng/tabmenu';
 
 @NgModule({
   exports: [
@@ -151,7 +152,8 @@ import { StepsModule } from 'primeng/steps'
     GalleriaModule,
     PanelMenuModule,
     SlideMenuModule,
-    StepsModule
+    StepsModule,
+    TabMenuModule
   ],
 })
 export class PrimeNgModule { }
