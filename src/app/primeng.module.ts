@@ -68,6 +68,9 @@ import { DynamicDialogModule } from 'primeng/dynamicdialog';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
 import { SidebarModule } from 'primeng/sidebar';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { DockModule } from 'primeng/dock';
+import { TerminalModule } from 'primeng/terminal';
+import { GalleriaModule } from 'primeng/galleria';
 
 @NgModule({
   exports: [
@@ -139,7 +142,10 @@ import { BreadcrumbModule } from 'primeng/breadcrumb';
     DynamicDialogModule,
     OverlayPanelModule,
     SidebarModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    DockModule,
+    TerminalModule,
+    GalleriaModule
   ],
 })
 export class PrimeNgModule { }
