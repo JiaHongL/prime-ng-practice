@@ -1,1 +1,10 @@
-<p>steps works!</p>
+<h1>Steps</h1>
+<p> 可自己控制，也可與路由路徑搭配，請參考官網範例。</p>
+
+<p-toast></p-toast>
+
+<h3 class="first">Basic</h3>
+<p-steps [model]="items"></p-steps>
+
+<h3>Clickable</h3>
+<p-steps [model]="items" [(activeIndex)]="activeIndex" [readonly]="false"></p-steps>
