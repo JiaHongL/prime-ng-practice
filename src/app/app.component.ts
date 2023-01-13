@@ -502,7 +502,10 @@ export class AppComponent {
       },
       {
         label: 'File 檔案',
-        routerLink: ''
+        items:[{
+          label:'FileUpload 檔案上傳',
+          routerLink:'file/file-upload'
+        }]
       },
       {
         label: 'Menu 選單',
