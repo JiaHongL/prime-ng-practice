@@ -544,7 +544,7 @@ export class AppComponent {
             routerLink:'menu/panel-menu'
           },
           { 
-            label: 'SlideMenu 側欄選單(一直點進去)',
+            label: 'SlideMenu 滑動選單(一直點進去)',
             routerLink:'menu/slide-menu'
           },
           { 
