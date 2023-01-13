@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { PrimeNgModule } from 'src/app/primeng.module';
 
 import { MenuRoutingModule } from './menu-routing.module';
 import { MenuModelComponent } from './menu-model/menu-model.component';
@@ -14,7 +17,6 @@ import { SildeMenuComponent } from './silde-menu/silde-menu.component';
 import { StepsComponent } from './steps/steps.component';
 import { TabMenuComponent } from './tab-menu/tab-menu.component';
 import { TieredMenuComponent } from './tiered-menu/tiered-menu.component';
-
 
 @NgModule({
   declarations: [
@@ -33,7 +35,10 @@ import { TieredMenuComponent } from './tiered-menu/tiered-menu.component';
   ],
   imports: [
     CommonModule,
-    MenuRoutingModule
+    MenuRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    PrimeNgModule
   ]
 })
 export class MenuModule { }

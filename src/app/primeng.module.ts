@@ -67,6 +67,7 @@ import { ConfirmPopupModule } from 'primeng/confirmpopup';
 import { DynamicDialogModule } from 'primeng/dynamicdialog';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
 import { SidebarModule } from 'primeng/sidebar';
+import { BreadcrumbModule } from 'primeng/breadcrumb';
 
 @NgModule({
   exports: [
@@ -137,7 +138,8 @@ import { SidebarModule } from 'primeng/sidebar';
     ConfirmPopupModule,
     DynamicDialogModule,
     OverlayPanelModule,
-    SidebarModule
+    SidebarModule,
+    BreadcrumbModule
   ],
 })
 export class PrimeNgModule { }
