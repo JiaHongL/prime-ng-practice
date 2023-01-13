@@ -15,18 +15,18 @@ import { TabMenuComponent } from './tab-menu/tab-menu.component';
 import { TieredMenuComponent } from './tiered-menu/tiered-menu.component';
 
 const routes: Routes = [
-  { path: 'MenuModel', component: MenuModelComponent },
-  { path: 'Breadcrumb', component: BreadcrumbComponent },
-  { path: 'ContextMenu', component: ContextMenuComponent },
-  { path: 'Dock', component: DockComponent },
-  { path: 'MegaMenu', component: MegaMenuComponent },
-  { path: 'Menu', component: MenuComponent },
-  { path: 'Menubar', component: MenubarComponent },
-  { path: 'PanelMenu', component: PanelMenuComponent },
-  { path: 'SlideMenu', component: SildeMenuComponent },
-  { path: 'Steps', component: StepsComponent },
-  { path: 'TabMenu', component: TabMenuComponent },
-  { path: 'TieredMenu', component: TieredMenuComponent },
+  { path: 'menu-model', component: MenuModelComponent },
+  { path: 'breadcrumb', component: BreadcrumbComponent },
+  { path: 'context-menu', component: ContextMenuComponent },
+  { path: 'dock', component: DockComponent },
+  { path: 'mega-menu', component: MegaMenuComponent },
+  { path: 'menu', component: MenuComponent },
+  { path: 'menubar', component: MenubarComponent },
+  { path: 'panel-menu', component: PanelMenuComponent },
+  { path: 'slide-menu', component: SildeMenuComponent },
+  { path: 'steps', component: StepsComponent },
+  { path: 'tab-menu', component: TabMenuComponent },
+  { path: 'tiered-menu', component: TieredMenuComponent },
 ];
 
 @NgModule({
