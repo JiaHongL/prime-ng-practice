@@ -509,7 +509,57 @@ export class AppComponent {
       },
       {
         label: 'Menu 選單',
-        routerLink: ''
+        routerLink: '',
+        items:[
+          { 
+            label: 'MenuModel 選單的資料模型',
+            routerLink:'menu/menu-model'
+          },
+          { 
+            label: 'Breadcrumb 麵包屑',
+            routerLink:'menu/breadcrumb'
+          },
+          { 
+            label: 'ContextMenu 右鍵選單',
+            routerLink:'menu/context-menu'
+          },
+          { 
+            label: 'Dock (類似 mac os 的 dock menu)',
+            routerLink:'menu/dock'
+          },
+          { 
+            label: 'MegaMenu 大型選單 (會連 submenu 一起顯示)',
+            routerLink:'menu/mega-menu'
+          },
+          { 
+            label: 'Menu 選單 (可使用 appendTo 做成按鈕選單)',
+            routerLink:'menu/menu'
+          },
+          { 
+            label: 'Menubar 選單欄 (水平)',
+            routerLink:'menu/menubar'
+          },
+          { 
+            label: 'PanelMenu 收合選單',
+            routerLink:'menu/panel-menu'
+          },
+          { 
+            label: 'SlideMenu 側欄選單(一直點進去)',
+            routerLink:'menu/slide-menu'
+          },
+          { 
+            label: 'Steps 步驟選單',
+            routerLink:'menu/steps'
+          },
+          { 
+            label: 'TabMenu 標籤選單',
+            routerLink:'menu/tab-menu'
+          },
+          { 
+            label: 'TieredMenu 分層式選單',
+            routerLink:'menu/tiered-menu'
+          },
+        ]
       },
       {
         label: 'Chart 圖表',
