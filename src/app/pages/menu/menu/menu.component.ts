@@ -1,15 +1,60 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  styleUrls: ['./menu.component.scss'],
+  providers: [MessageService]
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  items!: MenuItem[];
 
-  ngOnInit(): void {
+  constructor(private messageService: MessageService) { }
+
+  ngOnInit() {
+    this.items = [{
+      label: 'Options',
+      items: [{
+        label: 'Update',
+        icon: 'pi pi-refresh',
+        command: () => {
+          this.update();
+        }
+      },
+      {
+        label: 'Delete',
+        icon: 'pi pi-times',
+        command: () => {
+          this.delete();
+        }
+      }
+      ]
+    },
+    {
+      label: 'Navigate',
+      items: [{
+        label: 'Angular',
+        icon: 'pi pi-external-link',
+        url: 'http://angular.io'
+      },
+      {
+        label: 'Router',
+        icon: 'pi pi-upload',
+        routerLink: '/fileupload'
+      }
+      ]
+    }
+    ];
+  }
+
+  update() {
+    this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Data Updated' });
+  }
+
+  delete() {
+    this.messageService.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted' });
   }
 
 }
