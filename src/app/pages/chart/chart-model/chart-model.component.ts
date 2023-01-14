@@ -29,17 +29,15 @@ export class ChartModelComponent {
 
   ngOnInit() {
     this.options = {
-      option:{
-        title: {
+      title: {
           display: true,
           text: 'My Title',
           fontSize: 16
-        },
-        legend: {
+      },
+      legend: {
           position: 'bottom'
-        }
       }
-    }
+  };
   }
 
   selectData(event:any){

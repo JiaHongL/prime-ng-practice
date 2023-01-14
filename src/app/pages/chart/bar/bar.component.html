@@ -1,1 +1,24 @@
-<p>bar works!</p>
+<h1>BarChart 長條圖</h1>
+<p>水平、垂直、多軸、堆疊</p>
+
+<div class="content-section implementation">
+    <div class="card">
+        <h5>Vertical</h5>
+        <p-chart type="bar" [data]="basicData" [options]="basicOptions"></p-chart>
+    </div>
+
+    <div class="card">
+        <h5>Horizontal</h5>
+        <p-chart type="bar" [data]="basicData" [options]="horizontalOptions"></p-chart>
+    </div>
+
+    <div class="card">
+        <h5>Multi Axis</h5>
+        <p-chart type="bar" [data]="multiAxisData" [options]="multiAxisOptions"></p-chart>
+    </div>
+
+    <div class="card">
+        <h5>Stacked</h5>
+        <p-chart type="bar" [data]="stackedData" [options]="stackedOptions"></p-chart>
+    </div>
+</div>
