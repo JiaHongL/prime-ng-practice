@@ -504,7 +504,7 @@ export class AppComponent {
         label: 'File 檔案',
         items:[{
           label:'FileUpload 檔案上傳',
-          routerLink:'file/file-upload'
+          routerLink:'/file/file-upload'
         }]
       },
       {
@@ -513,57 +513,82 @@ export class AppComponent {
         items:[
           { 
             label: 'MenuModel 選單的資料模型',
-            routerLink:'menu/menu-model'
+            routerLink:'/menu/menu-model'
           },
           { 
             label: 'Breadcrumb 麵包屑',
-            routerLink:'menu/breadcrumb'
+            routerLink:'/menu/breadcrumb'
           },
           { 
             label: 'ContextMenu 右鍵選單',
-            routerLink:'menu/context-menu'
+            routerLink:'/menu/context-menu'
           },
           { 
             label: 'Dock (類似 mac os 的 dock menu)',
-            routerLink:'menu/dock'
+            routerLink:'/menu/dock'
           },
           { 
             label: 'MegaMenu 大型選單 (會連 submenu 一起顯示)',
-            routerLink:'menu/mega-menu'
+            routerLink:'/menu/mega-menu'
           },
           { 
             label: 'Menu 選單 (可使用 appendTo 做成按鈕選單)',
-            routerLink:'menu/menu'
+            routerLink:'/menu/menu'
           },
           { 
             label: 'Menubar 選單欄 (水平)',
-            routerLink:'menu/menubar'
+            routerLink:'/menu/menubar'
           },
           { 
             label: 'PanelMenu 收合選單',
-            routerLink:'menu/panel-menu'
+            routerLink:'/menu/panel-menu'
           },
           { 
             label: 'SlideMenu 滑動選單(一直點進去)',
-            routerLink:'menu/slide-menu'
+            routerLink:'/menu/slide-menu'
           },
           { 
             label: 'Steps 步驟選單',
-            routerLink:'menu/steps'
+            routerLink:'/menu/steps'
           },
           { 
             label: 'TabMenu 標籤選單',
-            routerLink:'menu/tab-menu'
+            routerLink:'/menu/tab-menu'
           },
           { 
             label: 'TieredMenu 分層式選單',
-            routerLink:'menu/tiered-menu'
+            routerLink:'/menu/tiered-menu'
           },
         ]
       },
       {
         label: 'Chart 圖表',
-        routerLink: ''
+        items:[
+          { 
+            label: 'ChartModel 圖表的資料模型',
+            routerLink: '/chart/chart-model'},
+          { 
+            label:'Bar 長條圖',
+            routerLink: '/chart/bar'},
+          { 
+            label:'Doughnut 甜甜圈圖',
+            routerLink: '/chart/doughnut'},
+          { 
+            label:'Line 折線圖',
+            routerLink: '/chart/line'},
+          { 
+            label:'PolarArea 極座標圓餅圖',
+            routerLink: '/chart/polar-area'},
+          { 
+            label:'Pie 圓餅圖',
+            routerLink: '/chart/pie'},
+          { 
+            label:'Radar 雷達圖',
+            routerLink: '/chart/radar'},
+          { 
+            label:'Combo 組合',
+            routerLink: '/chart/combo'},
+        ]
       },
       {
         label: 'Message 訊息',

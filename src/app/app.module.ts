@@ -6,6 +6,7 @@ import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrimeNgModule } from './primeng.module';
+import { ChartModule } from './pages/chart/chart.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { PrimeNgModule } from './primeng.module';
     HttpClientModule,
     AppRoutingModule,
     PrimeNgModule,
+    ChartModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

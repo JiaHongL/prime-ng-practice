@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'overly', loadChildren: () => import('./pages/overly/overly.module').then(m => m.OverlyModule) },
   { path: 'file', loadChildren: () => import('./pages/file/file.module').then(m => m.FileModule) },
   { path: 'menu', loadChildren: () => import('./pages/menu/menu.module').then(m => m.MenuModule) },
+  { path: 'chart', loadChildren: () => import('./pages/chart/chart.module').then(m => m.ChartModule) },
 ]
 
 @NgModule({
