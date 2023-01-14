@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrimeNgModule } from './primeng.module';
 import { ChartModule } from './pages/chart/chart.module';
+import { MessagesModule } from './pages/messages/messages.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ChartModule } from './pages/chart/chart.module';
     AppRoutingModule,
     PrimeNgModule,
     ChartModule,
+    MessagesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'file', loadChildren: () => import('./pages/file/file.module').then(m => m.FileModule) },
   { path: 'menu', loadChildren: () => import('./pages/menu/menu.module').then(m => m.MenuModule) },
   { path: 'chart', loadChildren: () => import('./pages/chart/chart.module').then(m => m.ChartModule) },
+  { path: 'message', loadChildren: () => import('./pages/messages/messages.module').then(m => m.MessagesModule) },
 ]
 
 @NgModule({
