@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PhotoService } from 'src/app/services/photo.service';
 
 @Component({
   selector: 'app-caption',
@@ -6,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./caption.component.scss']
 })
 export class CaptionComponent implements OnInit {
+  images!: any[];
 
-  constructor() { }
+  responsiveOptions:any[] = [
+      {
+          breakpoint: '1024px',
+          numVisible: 5
+      },
+      {
+          breakpoint: '768px',
+          numVisible: 3
+      },
+      {
+          breakpoint: '560px',
+          numVisible: 1
+      }
+  ];
 
-  ngOnInit(): void {
+  constructor(private photoService: PhotoService) { }
+
+  ngOnInit() {
+      this.photoService.getImages().then(images => this.images = images)
   }
-
 }

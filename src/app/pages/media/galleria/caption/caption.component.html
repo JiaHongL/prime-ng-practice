@@ -1,1 +1,16 @@
-<p>caption works!</p>
+<h1>Caption 說明標題</h1>
+
+<p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5"> 
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="p-grid p-nogutter p-jc-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block;" />
+        </div>
+    </ng-template>
+    <ng-template pTemplate="caption" let-item>
+        <h4 style="margin-bottom: .5rem; color: #ffffff;">{{item.title}}</h4>
+        <p>{{item.alt}}</p>
+    </ng-template>
+</p-galleria>
