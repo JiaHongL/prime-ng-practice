@@ -157,7 +157,8 @@ import { CarouselModule } from 'primeng/carousel';
     StepsModule,
     TabMenuModule,
     ChartModule,
-    CarouselModule
+    CarouselModule,
+    
   ],
 })
 export class PrimeNgModule { }

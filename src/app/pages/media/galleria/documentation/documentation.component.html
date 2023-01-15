@@ -1,1 +1,18 @@
-<p>documentation works!</p>
+<h1>Galleria 圖片展示</h1>
+<ul>
+    <li>numVisible : 每頁幾筆</li>
+    <li>responsiveOptions : 可根據斷點，設定對應的 numVisible</li>
+    <li>Indicators : 指示器，允許快速換到某張圖</li>
+    <li>Templates : header、indicator、caption、footer</li>
+</ul>
+
+<p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" style="width: 100%;" />
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="p-grid p-nogutter p-jc-center">
+            <img [src]="item.thumbnailImageSrc" />
+        </div>
+    </ng-template>
+</p-galleria>

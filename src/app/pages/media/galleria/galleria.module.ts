@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { PrimeNgModule } from 'src/app/primeng.module';
+
 import { GalleriaRoutingModule } from './galleria-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ProgrammaticComponent } from './programmatic/programmatic.component';
@@ -12,7 +14,6 @@ import { FullscreenComponent } from './fullscreen/fullscreen.component';
 import { AutoPlayComponent } from './auto-play/auto-play.component';
 import { CaptionComponent } from './caption/caption.component';
 import { AdvancedComponent } from './advanced/advanced.component';
-
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AdvancedComponent } from './advanced/advanced.component';
   ],
   imports: [
     CommonModule,
-    GalleriaRoutingModule
+    GalleriaRoutingModule,
+    PrimeNgModule
   ]
 })
 export class GalleriaModule { }
