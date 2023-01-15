@@ -658,7 +658,7 @@ export class AppComponent {
                 routerLink: '/media/galleria/caption'
               },
               {
-                label: 'Advanced 先進用法',
+                label: 'Advanced 高級用法',
                 routerLink: '/media/galleria/advanced'
               },
             ]
