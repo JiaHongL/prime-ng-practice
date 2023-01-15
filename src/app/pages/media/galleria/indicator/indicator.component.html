@@ -1,1 +1,109 @@
-<p>indicator works!</p>
+<h1>indicator 指示器</h1>
+
+<ul>
+    <li>
+        changeItemOnIndicatorHover : 設定為 hover 切換圖片
+    </li>
+    <li>
+        indicatorsPosition : 設定指示器的位置
+    </li>
+    <li>
+        template : header、indicator、caption、footer
+    </li>
+</ul>
+
+<h5>Indicators with Click Event</h5>
+<p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5"
+    [showThumbnails]="false" [showIndicators]="true"> 
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block;" />
+        </div>
+    </ng-template>
+</p-galleria>
+
+<h5>Indicators with Hover Event</h5>
+<p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5"
+    [showThumbnails]="false" [showIndicators]="true" [changeItemOnIndicatorHover]="true"> 
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block;" />
+        </div>
+    </ng-template>
+</p-galleria>
+
+<h5>Inside Content</h5>
+<p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5"
+    [showThumbnails]="false" [showIndicators]="true" [changeItemOnIndicatorHover]="true" [showIndicatorsOnItem]="true"> 
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block;" />
+        </div>
+    </ng-template>
+</p-galleria>
+
+<h5>Positioned at Top</h5>
+<p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px','margin-top': '2em'}" [numVisible]="5"
+    [showThumbnails]="false" [showIndicators]="true" [changeItemOnIndicatorHover]="true" [showIndicatorsOnItem]="true" indicatorsPosition="top">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block;" />
+        </div>
+    </ng-template>
+</p-galleria>
+
+<h5>Positioned at Left</h5>
+<p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px','margin-top': '2em'}" [numVisible]="5"
+    [showThumbnails]="false" [showIndicators]="true" [changeItemOnIndicatorHover]="true" [showIndicatorsOnItem]="true" indicatorsPosition="left">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block;" />
+        </div>
+    </ng-template>
+</p-galleria>
+
+<h5>Positioned at Right</h5>
+<p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px','margin-top': '2em'}" [numVisible]="5"
+    [showThumbnails]="false" [showIndicators]="true" [changeItemOnIndicatorHover]="true" [showIndicatorsOnItem]="true" indicatorsPosition="right">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block;" />
+        </div>
+    </ng-template>
+</p-galleria>
+
+<h5>Template</h5>
+<p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px','margin-top': '2em'}" [numVisible]="5"
+    [showThumbnails]="false" [showIndicators]="true" [changeItemOnIndicatorHover]="true" [showIndicatorsOnItem]="true" indicatorsPosition="left">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block;" />
+        </div>
+    </ng-template>
+    <ng-template pTemplate="indicator" let-index>
+        <span style="color: #e9ecef; cursor: pointer">
+            {{index + 1}}
+        </span>
+    </ng-template>
+</p-galleria>
