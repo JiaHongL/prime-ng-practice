@@ -1,1 +1,45 @@
-<p>programmatic works!</p>
+<h1>Programmatic 程式化</h1>
+<p>使用 activeIndex 控制上下張圖片顯示</p>
+
+<div class="p-py-2">
+
+    <p-button
+        type="button"
+        icon="pi pi-plus"
+        (click)="next()"
+        styleClass="p-button-secondary p-mr-2"
+    ></p-button>
+
+    <p-button
+        type="button"
+        icon="pi pi-minus"
+        (click)="prev()"
+        styleClass="p-button-secondary"
+    ></p-button>
+
+</div>
+<p-galleria
+    [value]="images"
+    [responsiveOptions]="responsiveOptions"
+    [containerStyle]="{'max-width': '520px'}"
+    [numVisible]="5"
+    [(activeIndex)]="activeIndex"
+>
+    <ng-template
+        pTemplate="item"
+        let-item
+    >
+        <img
+            [src]="item.previewImageSrc"
+            style="width: 100%;"
+        >
+    </ng-template>
+    <ng-template
+        pTemplate="thumbnail"
+        let-item
+    >
+        <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc">
+        </div>
+    </ng-template>
+</p-galleria>
