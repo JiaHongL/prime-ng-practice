@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Product, ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-carousel',
@@ -7,9 +8,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor() { }
+  products!: Product[];
 
-  ngOnInit(): void {
+  responsiveOptions;
+
+  constructor(private productService: ProductService) {
+    this.responsiveOptions = [
+      {
+        breakpoint: '1024px',
+        numVisible: 3,
+        numScroll: 3
+      },
+      {
+        breakpoint: '768px',
+        numVisible: 2,
+        numScroll: 2
+      },
+      {
+        breakpoint: '560px',
+        numVisible: 1,
+        numScroll: 1
+      }
+    ];
+  }
+
+  ngOnInit() {
+    this.productService.getProductsSmall().then(products => {
+      this.products = products;
+    });
   }
 
 }

@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { MediaRoutingModule } from './media-routing.module';
 import { CarouselComponent } from './carousel/carousel.component';
 
+import { PrimeNgModule } from 'src/app/primeng.module';
+
 
 @NgModule({
   declarations: [
@@ -11,7 +13,8 @@ import { CarouselComponent } from './carousel/carousel.component';
   ],
   imports: [
     CommonModule,
-    MediaRoutingModule
+    MediaRoutingModule,
+    PrimeNgModule
   ]
 })
 export class MediaModule { }

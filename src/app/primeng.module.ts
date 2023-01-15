@@ -76,6 +76,7 @@ import { SlideMenuModule } from 'primeng/slidemenu';
 import { StepsModule } from 'primeng/steps';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { ChartModule } from 'primeng/chart';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   exports: [
@@ -155,7 +156,8 @@ import { ChartModule } from 'primeng/chart';
     SlideMenuModule,
     StepsModule,
     TabMenuModule,
-    ChartModule
+    ChartModule,
+    CarouselModule
   ],
 })
 export class PrimeNgModule { }
