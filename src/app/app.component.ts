@@ -662,6 +662,10 @@ export class AppComponent {
                 routerLink: '/media/galleria/advanced'
               },
             ]
+          },
+          {
+            label:'Image 圖片',
+            routerLink:'/media/image'
           }
         ]
       },

@@ -5,11 +5,13 @@ import { MediaRoutingModule } from './media-routing.module';
 import { CarouselComponent } from './carousel/carousel.component';
 
 import { PrimeNgModule } from 'src/app/primeng.module';
+import { ImageComponent } from './image/image.component';
 
 
 @NgModule({
   declarations: [
-    CarouselComponent
+    CarouselComponent,
+    ImageComponent
   ],
   imports: [
     CommonModule,
