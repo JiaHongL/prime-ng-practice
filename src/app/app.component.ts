@@ -605,7 +605,7 @@ export class AppComponent {
             label: 'Message 訊息 (inline 的訊息)',
             routerLink: '/message/messages'
           },
-          { 
+          {
             label: 'Toast 土司 (使用彈出的方式，顯示訊息)',
             routerLink: '/message/toast'
           },
@@ -613,7 +613,57 @@ export class AppComponent {
       },
       {
         label: 'Media 媒體',
-        routerLink: ''
+        items: [
+          {
+            label: 'Carousel 輪撥',
+            routerLink: '/media/carousel'
+          },
+          {
+            label: 'Galleria 圖片展示',
+            items: [
+              {
+                label: 'Documentation 文件',
+                routerLink: '/media/galleria/documentation'
+              },
+              {
+                label: 'Programmatic 程式化',
+                routerLink: '/media/galleria/programmatic'
+              },
+              {
+                label: 'Indicator 指示器',
+                routerLink: '/media/galleria/indicator'
+              },
+              {
+                label: ' Thumbnail 縮圖',
+                routerLink: '/media/galleria/thumbnail'
+              },
+              {
+                label: 'Navigator 導航',
+                routerLink: '/media/galleria/navigator'
+              },
+              {
+                label: 'Responsive 響應式',
+                routerLink: '/media/galleria/responsive'
+              },
+              {
+                label: 'Fullscreen 全螢幕',
+                routerLink: '/media/galleria/fullscreen'
+              },
+              {
+                label: 'AutoPlay 自動播放',
+                routerLink: '/media/galleria/autoPlay'
+              },
+              {
+                label: 'Caption 標題說明',
+                routerLink: '/media/galleria/caption'
+              },
+              {
+                label: 'Advanced 先進用法',
+                routerLink: '/media/galleria/advanced'
+              },
+            ]
+          }
+        ]
       },
       {
         label: 'Drag and Drop 拖放',

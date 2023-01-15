@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'menu', loadChildren: () => import('./pages/menu/menu.module').then(m => m.MenuModule) },
   { path: 'chart', loadChildren: () => import('./pages/chart/chart.module').then(m => m.ChartModule) },
   { path: 'message', loadChildren: () => import('./pages/messages/messages.module').then(m => m.MessagesModule) },
+  { path: 'media', loadChildren: () => import('./pages/media/media-routing.module').then(m => m.MediaRoutingModule) },
 ]
 
 @NgModule({

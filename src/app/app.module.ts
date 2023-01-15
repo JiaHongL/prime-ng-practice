@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { PrimeNgModule } from './primeng.module';
 import { ChartModule } from './pages/chart/chart.module';
 import { MessagesModule } from './pages/messages/messages.module';
+import { MediaModule } from './pages/media/media.module';
+import { GalleriaModule } from './pages/media/galleria/galleria.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { MessagesModule } from './pages/messages/messages.module';
     PrimeNgModule,
     ChartModule,
     MessagesModule,
+    MediaModule,
+    GalleriaModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
