@@ -81,6 +81,7 @@ import { ImageModule } from 'primeng/image';
 import { DragDropModule } from 'primeng/dragdrop';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
+import { BadgeModule } from 'primeng/badge';
 
 @NgModule({
   exports: [
@@ -165,7 +166,8 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
     ImageModule,
     DragDropModule,
     AvatarModule,
-    AvatarGroupModule
+    AvatarGroupModule,
+    BadgeModule
   ],
 })
 export class PrimeNgModule { }
