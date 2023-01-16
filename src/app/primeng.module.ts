@@ -88,6 +88,7 @@ import { ChipModule } from 'primeng/chip';
 import { InplaceModule } from 'primeng/inplace';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { ScrollTopModule } from 'primeng/scrolltop';
+import { TagModule } from 'primeng/tag';
 
 @NgModule({
   exports: [
@@ -178,7 +179,8 @@ import { ScrollTopModule } from 'primeng/scrolltop';
     ChipModule,
     InplaceModule,
     ProgressSpinnerModule,
-    ScrollTopModule
+    ScrollTopModule,
+    TagModule
   ],
 })
 export class PrimeNgModule { }
