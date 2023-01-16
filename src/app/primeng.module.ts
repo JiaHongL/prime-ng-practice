@@ -87,6 +87,7 @@ import { CaptchaModule } from 'primeng/captcha';
 import { ChipModule } from 'primeng/chip';
 import { InplaceModule } from 'primeng/inplace';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { ScrollTopModule } from 'primeng/scrolltop';
 
 @NgModule({
   exports: [
@@ -176,7 +177,8 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
     CaptchaModule,
     ChipModule,
     InplaceModule,
-    ProgressSpinnerModule
+    ProgressSpinnerModule,
+    ScrollTopModule
   ],
 })
 export class PrimeNgModule { }
