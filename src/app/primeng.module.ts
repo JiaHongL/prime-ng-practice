@@ -86,6 +86,7 @@ import { BlockUIModule } from 'primeng/blockui';
 import { CaptchaModule } from 'primeng/captcha';
 import { ChipModule } from 'primeng/chip';
 import { InplaceModule } from 'primeng/inplace';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 @NgModule({
   exports: [
@@ -174,7 +175,8 @@ import { InplaceModule } from 'primeng/inplace';
     BlockUIModule,
     CaptchaModule,
     ChipModule,
-    InplaceModule
+    InplaceModule,
+    ProgressSpinnerModule
   ],
 })
 export class PrimeNgModule { }
