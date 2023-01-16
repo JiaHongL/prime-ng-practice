@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Car, CarService } from 'src/app/services/car.service';
 
 @Component({
   selector: 'app-inplace',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InplaceComponent implements OnInit {
 
-  constructor() { }
+  cars!: Car[];
+        
+  constructor(private carService: CarService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+      this.carService.getCarsSmall().then(cars => this.cars = cars);
   }
 
 }

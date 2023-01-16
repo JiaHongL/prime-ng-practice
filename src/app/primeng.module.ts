@@ -84,7 +84,8 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
 import { BadgeModule } from 'primeng/badge';
 import { BlockUIModule } from 'primeng/blockui';
 import { CaptchaModule } from 'primeng/captcha';
-import { ChipModule } from 'primeng/chip'
+import { ChipModule } from 'primeng/chip';
+import { InplaceModule } from 'primeng/inplace';
 
 @NgModule({
   exports: [
@@ -172,7 +173,8 @@ import { ChipModule } from 'primeng/chip'
     BadgeModule,
     BlockUIModule,
     CaptchaModule,
-    ChipModule
+    ChipModule,
+    InplaceModule
   ],
 })
 export class PrimeNgModule { }
