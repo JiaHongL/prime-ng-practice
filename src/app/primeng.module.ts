@@ -79,6 +79,8 @@ import { ChartModule } from 'primeng/chart';
 import { CarouselModule } from 'primeng/carousel';
 import { ImageModule } from 'primeng/image';
 import { DragDropModule } from 'primeng/dragdrop';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
 
 @NgModule({
   exports: [
@@ -161,7 +163,9 @@ import { DragDropModule } from 'primeng/dragdrop';
     ChartModule,
     CarouselModule,
     ImageModule,
-    DragDropModule
+    DragDropModule,
+    AvatarModule,
+    AvatarGroupModule
   ],
 })
 export class PrimeNgModule { }
