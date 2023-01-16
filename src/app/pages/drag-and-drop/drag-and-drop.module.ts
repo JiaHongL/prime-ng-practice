@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { DragAndDropRoutingModule } from './drag-and-drop-routing.module';
 import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
 
-
+import { PrimeNgModule } from './../../primeng.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,8 @@ import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
   ],
   imports: [
     CommonModule,
-    DragAndDropRoutingModule
+    DragAndDropRoutingModule,
+    PrimeNgModule
   ]
 })
 export class DragAndDropModule { }

@@ -1,1 +1,52 @@
-<p>drag-and-drop works!</p>
+<h1>drag-and-drop 拖放</h1>
+<ul>
+    <li>pDraggable : 設定可拖曳的行為，拖拉的來源資料。</li>
+    <li>Draggable attributes :dragEffect(定義滑鼠的樣式)、dragHandle、pDraggableDisabled</li>
+    <li>Draggable event :onDragStart、onDrag、onDragEnd。</li>
+    <li>pDroppable : 設定可放置的行為，放置的目的地資料，使用陣列做儲存。</li>
+    <li>pDroppable attributes : dropEffect、pDroppableDisabled。</li>
+    <li>pDroppable event : onDragEnter、onDrop、onDragLeave。</li>
+</ul>
+
+<div class="p-grid card">
+    <!-- drag area -->
+    <div class="p-col-12 p-md-6 drag-column">
+        <div *ngFor="let product of availableProducts">
+            <div class="product-item" pDraggable="products" (onDragStart)="dragStart(product)" (onDragEnd)="dragEnd()">
+                <div class="image-container">
+                        <img src="assets/showcase/images/demo/product/{{product.image}}" [alt]="product.name" class="product-image" />
+                </div>
+                <div class="product-list-detail">
+                    <h5 class="p-mb-2">{{product.name}}</h5>
+                    <i class="pi pi-tag product-category-icon"></i>
+                    <span class="product-category">{{product.category}}</span>
+                </div>
+                <div class="product-list-action">
+                    <h6 class="p-mb-2">${{product.price}}</h6>
+                    <span class="'product-badge status-'{{product?.inventoryStatus?.toLowerCase()}}">{{product.inventoryStatus}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- drop area -->
+    <div class="p-col-12 p-md-6 drop-column" pDroppable="products" (onDrop)="drop()">
+        <p-table [value]="selectedProducts">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>ID</th>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-product>
+                <tr>
+                    <td>{{product.id}}</td>
+                    <td>{{product.category}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.price}}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>

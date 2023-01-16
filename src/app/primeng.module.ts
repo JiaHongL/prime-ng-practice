@@ -78,6 +78,7 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { ChartModule } from 'primeng/chart';
 import { CarouselModule } from 'primeng/carousel';
 import { ImageModule } from 'primeng/image';
+import { DragDropModule } from 'primeng/dragdrop';
 
 @NgModule({
   exports: [
@@ -159,7 +160,8 @@ import { ImageModule } from 'primeng/image';
     TabMenuModule,
     ChartModule,
     CarouselModule,
-    ImageModule
+    ImageModule,
+    DragDropModule
   ],
 })
 export class PrimeNgModule { }
