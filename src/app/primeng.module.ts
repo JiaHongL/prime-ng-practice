@@ -83,6 +83,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { BadgeModule } from 'primeng/badge';
 import { BlockUIModule } from 'primeng/blockui';
+import { CaptchaModule } from 'primeng/captcha';
 
 @NgModule({
   exports: [
@@ -169,7 +170,8 @@ import { BlockUIModule } from 'primeng/blockui';
     AvatarModule,
     AvatarGroupModule,
     BadgeModule,
-    BlockUIModule
+    BlockUIModule,
+    CaptchaModule
   ],
 })
 export class PrimeNgModule { }
