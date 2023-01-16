@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'message', loadChildren: () => import('./pages/messages/messages.module').then(m => m.MessagesModule) },
   { path: 'media', loadChildren: () => import('./pages/media/media.module').then(m => m.MediaModule) },
   { path: 'drag-and-drop', loadChildren: () => import('./pages/drag-and-drop/drag-and-drop.module').then(m => m.DragAndDropModule) },
+  { path: 'misc', loadChildren: () => import('./pages/misc/misc.module').then(m => m.MiscModule) },
 ]
 
 @NgModule({

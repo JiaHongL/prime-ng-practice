@@ -664,8 +664,8 @@ export class AppComponent {
             ]
           },
           {
-            label:'Image 圖片',
-            routerLink:'/media/image'
+            label: 'Image 圖片',
+            routerLink: '/media/image'
           }
         ]
       },
@@ -675,7 +675,46 @@ export class AppComponent {
       },
       {
         label: 'Misc 雜項',
-        routerLink: ''
+        items: [
+          {
+            label: 'Avatar 頭像',
+            routerLink: '/misc/avatar'
+          },
+          {
+            label: 'Badge 徽章數',
+            routerLink: '/misc/badge'
+          },
+          {
+            label: 'BlockUI 阻擋的遮罩', routerLink: '/misc/block-ui'
+          },
+          {
+            label: 'Captcha 驗證碼(確認是否為人類)', routerLink: '/misc/captcha'
+          },
+          {
+            label: 'Chip chip圖示', routerLink: '/misc/chip'
+          },
+          {
+            label: 'Inplace 顯示和編輯切換', routerLink: '/misc/inplace'
+          },
+          {
+            label: 'ProgressBar 進度條', routerLink: '/misc/progress-bar'
+          },
+          {
+            label: 'ProgressSpinner 進度條(旋轉)', routerLink: '/misc/progress-spinner'
+          },
+          {
+            label: 'ScrollTop 滾至頂部', routerLink: '/misc/scroll-top'
+          },
+          {
+            label: 'Skeleton 佔位顯示', routerLink: '/misc/skeleton'
+          },
+          {
+            label: 'Tag 標籤', routerLink: '/misc/tag'
+          },
+          {
+            label: 'Terminal 終端機', routerLink: '/misc/terminal'
+          },
+        ]
       },
       {
         label: 'Directive',

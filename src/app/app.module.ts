@@ -11,6 +11,7 @@ import { MessagesModule } from './pages/messages/messages.module';
 import { MediaModule } from './pages/media/media.module';
 import { GalleriaModule } from './pages/media/galleria/galleria.module';
 import { DragAndDropModule } from './pages/drag-and-drop/drag-and-drop.module';
+import { MiscModule } from './pages/misc/misc.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { DragAndDropModule } from './pages/drag-and-drop/drag-and-drop.module';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    PrimeNgModule,
+    PrimeNgModule
   ],
   providers: [],
   bootstrap: [AppComponent]
