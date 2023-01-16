@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkeletonComponent implements OnInit {
 
+  products = [{},{},{},{},{}]
+
   constructor() { }
 
   ngOnInit(): void {
