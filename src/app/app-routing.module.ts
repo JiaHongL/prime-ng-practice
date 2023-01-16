@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'menu', loadChildren: () => import('./pages/menu/menu.module').then(m => m.MenuModule) },
   { path: 'chart', loadChildren: () => import('./pages/chart/chart.module').then(m => m.ChartModule) },
   { path: 'message', loadChildren: () => import('./pages/messages/messages.module').then(m => m.MessagesModule) },
-  { path: 'media', loadChildren: () => import('./pages/media/media-routing.module').then(m => m.MediaRoutingModule) },
+  { path: 'media', loadChildren: () => import('./pages/media/media.module').then(m => m.MediaModule) },
+  { path: 'drag-and-drop', loadChildren: () => import('./pages/drag-and-drop/drag-and-drop.module').then(m => m.DragAndDropModule) },
 ]
 
 @NgModule({

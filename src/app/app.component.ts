@@ -671,7 +671,7 @@ export class AppComponent {
       },
       {
         label: 'Drag and Drop 拖放',
-        routerLink: ''
+        routerLink: '/drag-and-drop/drag-and-drop'
       },
       {
         label: 'Misc 雜項',

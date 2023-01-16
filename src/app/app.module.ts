@@ -10,6 +10,7 @@ import { ChartModule } from './pages/chart/chart.module';
 import { MessagesModule } from './pages/messages/messages.module';
 import { MediaModule } from './pages/media/media.module';
 import { GalleriaModule } from './pages/media/galleria/galleria.module';
+import { DragAndDropModule } from './pages/drag-and-drop/drag-and-drop.module';
 
 @NgModule({
   declarations: [
@@ -21,10 +22,6 @@ import { GalleriaModule } from './pages/media/galleria/galleria.module';
     HttpClientModule,
     AppRoutingModule,
     PrimeNgModule,
-    ChartModule,
-    MessagesModule,
-    MediaModule,
-    GalleriaModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
