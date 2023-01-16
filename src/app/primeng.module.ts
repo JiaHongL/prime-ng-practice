@@ -82,6 +82,7 @@ import { DragDropModule } from 'primeng/dragdrop';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { BadgeModule } from 'primeng/badge';
+import { BlockUIModule } from 'primeng/blockui';
 
 @NgModule({
   exports: [
@@ -167,7 +168,8 @@ import { BadgeModule } from 'primeng/badge';
     DragDropModule,
     AvatarModule,
     AvatarGroupModule,
-    BadgeModule
+    BadgeModule,
+    BlockUIModule
   ],
 })
 export class PrimeNgModule { }

@@ -17,7 +17,7 @@ import { TerminalComponent } from './terminal/terminal.component';
 const routes: Routes = [
   { path: 'avatar', component: AvatarComponent },
   { path: 'badge', component: BadgeComponent },
-  { path: 'blockUI', component: BlockUIComponent },
+  { path: 'block-ui', component: BlockUIComponent },
   { path: 'captcha', component: CaptchaComponent },
   { path: 'chip', component: ChipComponent },
   { path: 'inplace', component: InplaceComponent },

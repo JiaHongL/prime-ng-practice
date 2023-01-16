@@ -5,11 +5,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './block-ui.component.html',
   styleUrls: ['./block-ui.component.scss']
 })
-export class BlockUIComponent implements OnInit {
+export class BlockUIComponent {
 
-  constructor() { }
+  blockedPanel: boolean = false;
 
-  ngOnInit(): void {
+  blockedDocument: boolean = false;
+
+  blockDocument() {
+      this.blockedDocument = true;
+      setTimeout(() => {
+          this.blockedDocument = false;
+      }, 3000);
   }
-
+  
 }
