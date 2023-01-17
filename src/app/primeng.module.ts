@@ -91,6 +91,7 @@ import { ScrollTopModule } from 'primeng/scrolltop';
 import { TagModule } from 'primeng/tag';
 import { DeferModule } from 'primeng/defer';
 import { FocusTrapModule } from 'primeng/focustrap';
+import { StyleClassModule } from 'primeng/styleclass';
 
 @NgModule({
   exports: [
@@ -184,7 +185,8 @@ import { FocusTrapModule } from 'primeng/focustrap';
     ScrollTopModule,
     TagModule,
     DeferModule,
-    FocusTrapModule
+    FocusTrapModule,
+    StyleClassModule
   ],
 })
 export class PrimeNgModule { }
