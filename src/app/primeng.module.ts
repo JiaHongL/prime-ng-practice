@@ -90,6 +90,7 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { TagModule } from 'primeng/tag';
 import { DeferModule } from 'primeng/defer';
+import { FocusTrapModule } from 'primeng/focustrap';
 
 @NgModule({
   exports: [
@@ -182,7 +183,8 @@ import { DeferModule } from 'primeng/defer';
     ProgressSpinnerModule,
     ScrollTopModule,
     TagModule,
-    DeferModule
+    DeferModule,
+    FocusTrapModule
   ],
 })
 export class PrimeNgModule { }
