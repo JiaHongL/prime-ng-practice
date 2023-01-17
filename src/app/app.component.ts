@@ -718,11 +718,18 @@ export class AppComponent {
       },
       {
         label: 'Directive',
-        routerLink: ''
+        items:[
+          { label: 'Defer 延遲', routerLink: '/directive/defer' },
+          { label: 'FocusTrap 陷阱對焦', routerLink: '/directive/focus-trap' },
+          { label: 'Ripple 波紋效果', routerLink: '/directive/ripple' },
+          { label: 'StyleClass 樣式類別', routerLink: '/directive/style-class' },
+        ]
       },
       {
         label: 'Utilities 實用類',
-        routerLink: ''
+        items:[{
+          label:'FilterService 過濾服務', routerLink:'/utilities/filter-service'
+        }]
       }
     ];
   }

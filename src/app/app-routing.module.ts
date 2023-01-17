@@ -15,6 +15,8 @@ const routes: Routes = [
   { path: 'media', loadChildren: () => import('./pages/media/media.module').then(m => m.MediaModule) },
   { path: 'drag-and-drop', loadChildren: () => import('./pages/drag-and-drop/drag-and-drop.module').then(m => m.DragAndDropModule) },
   { path: 'misc', loadChildren: () => import('./pages/misc/misc.module').then(m => m.MiscModule) },
+  { path: 'directive', loadChildren: () => import('./pages/directive/directive.module').then(m => m.DirectiveModule) },
+  { path: 'utilities', loadChildren: () => import('./pages/utilities/utilities.module').then(m => m.UtilitiesModule) },
 ]
 
 @NgModule({
