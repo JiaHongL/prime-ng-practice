@@ -92,6 +92,7 @@ import { TagModule } from 'primeng/tag';
 import { DeferModule } from 'primeng/defer';
 import { FocusTrapModule } from 'primeng/focustrap';
 import { StyleClassModule } from 'primeng/styleclass';
+import { RippleModule } from 'primeng/ripple';
 
 @NgModule({
   exports: [
@@ -186,7 +187,8 @@ import { StyleClassModule } from 'primeng/styleclass';
     TagModule,
     DeferModule,
     FocusTrapModule,
-    StyleClassModule
+    StyleClassModule,
+    RippleModule
   ],
 })
 export class PrimeNgModule { }
