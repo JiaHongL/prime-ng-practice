@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FilterComponent } from './../data/table/filter/filter.component';
+
+import { FilterServiceComponent } from './filter-service/filter-service.component';
 
 const routes: Routes = [
-  { path: 'filter-service', component: FilterComponent }
+  { path: 'filter-service', component: FilterServiceComponent }
 ];
 
 @NgModule({

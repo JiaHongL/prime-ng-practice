@@ -1,1 +1,58 @@
-<p>filter-service works!</p>
+<p>FilterService</p>
+
+<div ngNonBindable ngPreserveWhitespaces>
+    <div class="p-mb-1">
+        const value = 'PrimeNG';
+    </div>
+    <div class="p-mb-1">
+        this.filterService.filters.equals(value, 'NG');                             //false       
+    </div>
+    <div class="p-mb-1">
+        this.filterService.filters.equals(value, 8);                               //false        
+    </div>
+    <div class="p-mb-1">
+        this.filterService.filters.equals(value, new Date());                      //false        
+    </div>
+    <div class="p-mb-1">
+        this.filterService.filters.contains(value, 'NG');                          //true        
+    </div>
+    <div class="p-mb-1">
+        this.filterService.filters.startsWith(value, 'NG');                        //false
+    </div>
+    <div class="p-mb-1">
+        this.filterService.filters.endsWith(value, 'NG');                          //true
+    </div>
+    <div class="p-mb-1">
+        this.filterService.filters.lt(10, 20);                                     //true
+    </div>
+    <div class="p-mb-1">
+        this.filterService.filters.gt(50, 20);                                     //true
+    </div>
+    <div class="p-mb-1">
+        this.filterService.filters.in(value, ['PrimeFaces', 'PrimeNG']);           //true
+    </div>
+</div>
+
+<br>
+
+<p-table #dt [columns]="cols" [value]="cars" [paginator]="true" [rows]="10">
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+            <th *ngFor="let col of columns">
+                {{col.header}}
+            </th>
+        </tr>
+        <tr>
+            <th *ngFor="let col of columns">
+                <p-columnFilter type="text" [field]="col.field" [matchModeOptions]="matchModeOptions" [matchMode]="'custom-equals'"></p-columnFilter>
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-columns="columns">
+        <tr [pSelectableRow]="rowData">
+            <td *ngFor="let col of columns">
+                {{rowData[col.field]}}
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
