@@ -89,6 +89,7 @@ import { InplaceModule } from 'primeng/inplace';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { TagModule } from 'primeng/tag';
+import { DeferModule } from 'primeng/defer';
 
 @NgModule({
   exports: [
@@ -180,7 +181,8 @@ import { TagModule } from 'primeng/tag';
     InplaceModule,
     ProgressSpinnerModule,
     ScrollTopModule,
-    TagModule
+    TagModule,
+    DeferModule
   ],
 })
 export class PrimeNgModule { }
