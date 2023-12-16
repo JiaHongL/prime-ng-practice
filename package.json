@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href=/prime-ng-practice/"
+    "deploy": "ng deploy --base-href=/prime-ng-practice/",
+    "generate":"ng generate ./my-schematic/src/collection.json:basicPage"
   },
   "private": true,
   "dependencies": {
