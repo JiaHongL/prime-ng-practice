@@ -11,6 +11,7 @@
     "generate:basicPage": "ng generate ./my-schematic/src/collection.json:basicPage",
     "generate:basicPage2": "ng generate ./my-schematic/src/collection.json:basicPage2"
   },
+  "private": true,
   "autoPathScriptExecutor": {
     "scripts": [
       {
@@ -21,7 +22,6 @@
     ],
     "defaultParamName": "folderPath"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~13.3.0",
     "@angular/cdk": "^13.3.9",
