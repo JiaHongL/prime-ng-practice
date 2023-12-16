@@ -8,6 +8,14 @@
       "aliases": [
         "basic-page"
       ]
+    },
+    "basicPage2": {
+      "description": "Create a component with a login form 2",
+      "factory": "./ng-generate/login-form2/index#loginForm2",
+      "schema": "./ng-generate/login-form2/schema.json",
+      "aliases": [
+        "basic-page2"
+      ]
     }
   }
 }
