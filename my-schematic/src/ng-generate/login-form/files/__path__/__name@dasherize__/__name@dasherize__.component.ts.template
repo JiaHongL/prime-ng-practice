@@ -1,0 +1,27 @@
+import { Component } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+
+@Component({
+  selector: '<%= selector %>',
+  templateUrl: './<%= dasherize(name) %>.component.html',
+  styleUrls: ['./<%= dasherize(name) %>.component.<%= style %>']
+})
+export class <%= classify(name) %>Component {
+  
+  loginForm = this.fb.group({
+    account: '',
+    password: '',
+  });
+
+  constructor(private fb: FormBuilder) {}
+
+  login(): void {
+    const message =
+      '帳號:' +
+      this.loginForm.get('account').value +
+      '\n' +
+      '密碼:' +
+      this.loginForm.get('password').value;
+    alert(message);
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "basicPage": {
+      "description": "Create a component with a login form",
+      "factory": "./ng-generate/login-form/index#loginForm",
+      "schema": "./ng-generate/login-form/schema.json",
+      "aliases": [
+        "basic-page"
+      ]
+    }
+  }
+}
