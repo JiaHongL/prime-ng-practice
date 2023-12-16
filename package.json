@@ -15,7 +15,7 @@
   "autoPathScriptExecutor": {
     "scripts": [
       {
-        "command": "generate:basicPage",
+        "script": "generate:basicPage",
         "paramName": "path"
       },
       "generate:basicPage2"
